@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Song Han</title>
+    <!-- meta key -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugin/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <link href="assets/plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick-theme.css">
+
+    <!-- bin/jquery.slider.min.css -->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.blue.css" type="text/css">
+    <!--<link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.plastic.css" type="text/css">-->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.plastic.css"
+          type="text/css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/responsive-tabs.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="assets/plugin/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/tmpl.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.slider.js"></script>
+    <script src="assets/plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <ul class="nav nav-tabs user-form">
+                    <li class="active"><a data-toggle="tab" href="#login_form">Đăng nhập</a></li>
+                    <li><a data-toggle="tab" href="#register_form">Đăng ký</a></li>
+                </ul>
+                <div class="tab-content text-left">
+                    <div id="login_form" class="tab-pane fade in active ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>Đăng nhập khác:</h3>
+                                    <a href="#" class="btn btn-login-facebook margin-bot-15">Facebook</a>
+                                    <a href="#" class="btn btn-login-google margin-bot-15">Google</a>
+                                    <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                        mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Bạn đã là thành viên:</h3>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <button type="submit" class="btn btn-blue">Đăng nhập</button>
+                                            </div>
+                                            <div class="col-xs-6 text-right"
+                                                 style="margin-top: 5px; white-space: nowrap;">
+                                                <a href="#" class="btn_forget_password">Quên mật khẩu</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="register_form" class="tab-pane fade">
+                        <h3 class="text-center">Thông tin đăng ký</h3>
+                        <form class="form-horizontal">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="text" class="form-control" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" placeholder="Email"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="phone" class="form-control" placeholder="Số đện thoại">
+                                            </div>
+                                        </div>
+                                        <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                            mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Xác nhận mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <img src="assets/img/input_google.png"
+                                                     style="border-radius: 4px; width: 100%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-blue">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-6 pad-left-desktop-20 text-center-mobile">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" style="max-height: 50px">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 phone_number text-center-mobile">
+                    <i class="icon icon_phone"></i> 0908 115 8860 <span>(Ha Noi)</span><br>
+                    <i class="icon icon_phone"></i> 0903 601 212 <span>(Tp.HCM)</span>
+                </div>
+                <div class="col-md-5 col-xs-12 text-right text-center-mobile">
+                    <div class="contact"><a href="vechungtoi.html">VỀ CHÚNG TÔI</a> | <a href="lienhe.html">LIÊN HỆ</a>
+                    </div>
+                    <div class="socical">
+                        <ul>
+                            <li>
+                                <a><i class="icon icon_youtube"></i></a><a><i class="icon icon_facebook"></i></a><a><i
+                                    class="icon icon_bing"></i></a>
+                            </li>
+                            <li>
+                                <form class="search-form" action="" method="get ">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm" name="s"
+                                               value="">
+                                        <button type="submit" class="btn submit"><i class="fa fa-search"
+                                                                                    aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="login-form">
+                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle-o"
+                                                                                          aria-hidden="true"></i> Đăng
+                                    nhập <i
+                                            class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="index.html">Trang chủ</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vé Khuyến
+                                mãi</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="vemaybayquocte_vnairline.html">vietnam Airlines</a></li>
+                                    <li><a href="vemaybayquocte.html">Vé Quốc Tế</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour du
+                                lịch</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="tourdulichhan.html" class="submenu" tabindex="-1">Tour Nhật Bản <i
+                                                style="font-size: 19px" class="fa fa-angle-right pull-right"
+                                                aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Charter</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Charter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Âu</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Mỹ</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Á</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">du lich tự
+                                túc</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://songhantourist.com/japanrailpass/">Japan Rail Pass</a></li>
+                                    <li><a href="http://songhantourist.com/hanavi/">Hanavi</a></li>
+                                    <li><a href="dulichtutuc_spFIT.html">Sản Phẩm Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="thongtindulich.html">thông tin du lịch</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">khám phá
+                                nhật bản</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="khamphanhatban.html">TOTTORI</a></li>
+                                    <li><a href="khamphanhatban.html">TOHOKO</a></li>
+                                    <li><a href="khamphanhatban.html">TOCHIGI</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+</header>
+<style>
+    .page_title {
+        background: url('assets/img/khamphanhatban/page_title.png');
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .page_title h1 {
+        /*display: none;*/
+        color: #fdb714;
+        margin-top: 120px;
+    }
+
+    .page_title h1 span {
+        font-family: "UTM Beautiful Caps";
+    }
+
+    @media screen and (max-width: 768px) {
+        .page_title h1 {
+            display: block;
+            margin-top: 150px;
+        }
+
+        .page_title {
+            background: url('assets/img/khamphanhatban/page_title.png');
+            background-position: center center;
+        }
+    }
+</style>
+<section class="page_title ">
+    <div class="container">
+        <h1 class="text-center"><span>Khám phá</span> Nhật bản</h1>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="active">Khám phá Nhật Bản</li>
+        </ul>
+    </div>
+</section>
+<link rel="stylesheet" href="assets/plugin/ammap/ammap.css" type="text/css">
+<script src="assets/plugin//ammap/ammap.js" type="text/javascript"></script>
+<!-- check ammap/maps/js/ folder to see all available countries -->
+<!-- map file should be included after ammap.js -->
+<script src="assets/plugin/ammap/maps/japan.js" type="text/javascript"></script>
+<script>
+
+    var map;
+
+    AmCharts.ready(function () {
+        map = new AmCharts.AmMap();
+
+
+        map.balloon.color = "#000000";
+        var icon = "M9,0C4.029,0,0,4.029,0,9s4.029,9,9,9s9-4.029,9-9S13.971,0,9,0z M9,15.93 c-3.83,0-6.93-3.1-6.93-6.93S5.17,2.07,9,2.07s6.93,3.1,6.93,6.93S12.83,15.93,9,15.93 M12.5,9c0,1.933-1.567,3.5-3.5,3.5S5.5,10.933,5.5,9S7.067,5.5,9,5.5 S12.5,7.067,12.5,9z";
+
+        var tokyo = "<div><strong>abdcdef</strong> <br>Tokyo is the most populous city in the United States and the center of the" +
+            " New York Metropolitan Area, one of the most populous metropolitan areas in the world.</div>";
+        var dataProvider = {
+            mapVar: AmCharts.maps.japanLow,
+            getAreasFromMap: true,
+            areas: [
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path2920-3"
+
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "rect4335-7"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "rect4337-4"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "rect4339-3"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "rect4341-8"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "rect4343-0"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path3585-8"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path2468-0"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path3240-6"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path3242-8"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path3280-9"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path3302-8"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path4062"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path4064"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path4066"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path4068"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path2506-5"
+                },
+                {
+                    info: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    id: "path5492"
+                }
+            ],
+            images: [
+                {
+                    "type": "circle",
+                    "label": "Sapporo",
+                    "longitude": '140.354376',
+                    "latitude": '42.562096',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Hokodate",
+                    "longitude": '138.828810',
+                    "latitude": '40.868793',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Sendai",
+                    "longitude": '139.869356',
+                    "latitude": '36.268215',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Sendai",
+                    "longitude": '139.869356',
+                    "latitude": '36.268215'
+                },
+                {
+                    "type": "circle",
+                    "label": "Tokyo",
+                    "longitude": '138.691706',
+                    "latitude": '32.689487',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Yokohama",
+                    "longitude": '138.638026',
+                    "latitude": '32.243708'
+                },
+                {
+                    "type": "circle",
+                    "label": "Hakome",
+                    "longitude": '138.406937',
+                    "latitude": '31.832355'
+                },
+                {
+                    "type": "circle",
+                    "label": "Kanazawa",
+                    "longitude": '134.656205',
+                    "latitude": '32.961325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Nikko",
+                    "longitude": '138.698216',
+                    "latitude": '33.719903',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Takayama",
+                    "longitude": '134.956205',
+                    "latitude": '32.561325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Nagoya",
+                    "longitude": '134.956205',
+                    "latitude": '31.561325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Kyoto",
+                    "longitude": '132.956205',
+                    "latitude": '31.061325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Osaka",
+                    "longitude": '133.356205',
+                    "latitude": '30.061325',
+                    'color': '#ff1947'
+                },
+                {
+                    "type": "circle",
+                    "label": "Naga",
+                    "longitude": '133.356205',
+                    "latitude": '29.561325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Hiroshima",
+                    "longitude": '128.356205',
+                    "latitude": '29.561325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Fukuoka",
+                    "longitude": '125.356205',
+                    "latitude": '28.061325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Nagisaki",
+                    "longitude": '124.356205',
+                    "latitude": '27.061325'
+                },
+                {
+                    "type": "circle",
+                    "label": "Kagoshima",
+                    "longitude": '125.356205',
+                    "latitude": '25.061325',
+                    'color': '#ff1947'
+                }
+            ]
+
+        };
+
+        map.dataProvider = dataProvider;
+
+        map.areasSettings = {
+            autoZoom: true,
+//            selectedColor: "#CC0000",
+            rollOverOutlineColor: "#fb5e5e",
+            selectedColor: "#fb5e5e",
+            color: "#b6b6b6"
+        };
+
+        map.smallMap = new AmCharts.SmallMap();
+
+        map.addListener("clickMapObject", function (event) {
+            document.getElementById("info").innerHTML = '<p><b>' + event.mapObject.title + '</b><span class="btn-map-more pull-right hidden-lg hidden-md hidden-sm">&times;</span></p><p>' + event.mapObject.info + '</p>';
+            $('body, html').animate({scrollTop: $('#info').offset().top});
+        });
+
+        map.addListener("init", function () {
+            // iterate through areas and put a label over center of each
+            map.dataProvider.images = [];
+            for (x in map.dataProvider.areas) {
+                var area = map.dataProvider.areas[x];
+                var image = new AmCharts.MapImage();
+                image.latitude = map.getAreaCenterLatitude(area);
+                image.longitude = map.getAreaCenterLongitude(area);
+                image.label = area.title;
+                image.title = area.title;
+                image.linkToObject = area;
+                map.dataProvider.images.push(image);
+            }
+            map.validateData();
+        });
+
+        map.write("mapdiv");
+
+    });
+
+</script>
+<style>
+    #info {
+        background: #408ae8;
+        color: #fff;
+        padding: 10px;
+        max-height: 500px;
+        overflow: auto;
+    }
+
+    #info img {
+        width: 100%;
+    }
+
+    #info::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background-color: #F5F5F5;
+    }
+
+    #info::-webkit-scrollbar {
+        width: 10px;
+        background-color: #F5F5F5;
+    }
+
+    #info::-webkit-scrollbar-thumb {
+        background-color: #0ae;
+
+        background-image: -webkit-gradient(linear, 0 0, 0 100%,
+        color-stop(.5, rgba(255, 255, 255, .2)),
+        color-stop(.5, transparent), to(transparent));
+    }
+
+    #mapdiv {
+        height: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+        #mapdiv {
+            height: 350px;
+        }
+    }
+
+</style>
+<section class="japan_map">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9 col-md-push-3">
+                <div id="mapdiv"></div>
+            </div>
+            <div class="col-md-3  col-md-pull-9">
+                <div id="info">
+                    <p>Thông tin về Nhật bản</p>
+                    <p>Chọn thành phố để biết thêm thông tin</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="location news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-ms-6 col-xs-12">
+                <div class="khampha">
+                    <img src="assets/img/khamphanhatban/1.png">
+                    <div class="caption">tottori</div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-ms-6 col-xs-12">
+                <div class="khampha">
+                    <img src="assets/img/khamphanhatban/2.png">
+                    <div class="caption">Tottori</div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-ms-6 col-xs-12">
+                <div class="khampha">
+                    <img src="assets/img/khamphanhatban/3.png">
+                    <div class="caption">Tohoku</div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-ms-6 col-xs-12">
+                <div class="khampha">
+                    <img src="assets/img/khamphanhatban/4.png">
+                    <div class="caption">Tochigi</div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-ms-6 col-xs-12">
+                <div class="khampha">
+                    <img src="assets/img/khamphanhatban/5.png">
+                    <div class="caption">Yakushima</div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="pre-footer">
+            <ul class="section_menu">
+                <li><a href="#">Vé Khuyến mãi</a></li>
+                <li><a href="tourdulichnhatban_HAN.html">Tour du lich</a></li>
+                <li><a href="dulichtutuc_spFIT.html">du lịch tự túc</a></li>
+                <li><a href="thongtindulich.html">thông tin du lịch</a></li>
+                <li><a href="khamphanhatban.html">khám phá nhật bản</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN - CHI NHÁNH TP.HCM
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lửng 01, tầng lửng, Tòa nhà Trung tâm tài chính Bảo Việt, 233 Đồng Khởi, P. Bến Nghé, Quận
+                    1 <br>
+                    Điện thoại: 08 3824 8831<br>
+                    Email: sgn.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN TẠI HÀ NỘI
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Tầng 10, Tòa nhà Hồng Hà Center, 25 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội<br>
+                    Điện thoại: 04 3936 5877<br>
+                    Email: han.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    VPĐD AEON CELADON TÂN PHÚ
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô T-11, Tầng 3, 30 Bờ bao Tân Thắng, P. Sơn Kỳ, Quận Tân Phú, TP. HCM<br>
+                    Điện thoại: 08 7305 7678<br>
+                    Email: info-aeonceladon@songhantouist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CHI NHÁNH AEON CANARY <br> BÌNH DƯƠNG
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô G47, Tầng G, 01 Đại lộ Bình Dương, P. Bình Hòa, Bình Dương <br>
+                    Điện thoại: 065 0376 3493 <br>
+                    Email: info-aeonbduong@songhantouist.com
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="power_by text-center">
+    <div class="container">
+        Bản quyền thuộc về Công ty TNHH TM Du Lịch và Dịch vụ Sông Hàn<br>
+        Giấy phép kinh doanh số 0400423715 do Sở Kế Hoạch và Đầu Tư TP. Đà Nẵng cấp ngày 27/05/2002
+    </div>
+</div>
+</body>
+</html>

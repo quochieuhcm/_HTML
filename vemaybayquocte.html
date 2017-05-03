@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Song Han</title>
+    <!-- meta key -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugin/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <link href="assets/plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick-theme.css">
+
+    <!-- bin/jquery.slider.min.css -->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.blue.css" type="text/css">
+    <!--<link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.plastic.css" type="text/css">-->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.plastic.css"
+          type="text/css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/components.min.css">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/responsive-tabs.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="assets/plugin/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+    <!-- data table Javascript file -->
+    <script type="text/javascript" src="assets/plugin/datatables/datatables.min.js"></script>
+
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/tmpl.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.slider.js"></script>
+    <script src="assets/plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <ul class="nav nav-tabs user-form">
+                    <li class="active"><a data-toggle="tab" href="#login_form">Đăng nhập</a></li>
+                    <li><a data-toggle="tab" href="#register_form">Đăng ký</a></li>
+                </ul>
+                <div class="tab-content text-left">
+                    <div id="login_form" class="tab-pane fade in active ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>Đăng nhập khác:</h3>
+                                    <a href="#" class="btn btn-login-facebook margin-bot-15">Facebook</a>
+                                    <a href="#" class="btn btn-login-google margin-bot-15">Google</a>
+                                    <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                        mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Bạn đã là thành viên:</h3>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <button type="submit" class="btn btn-blue">Đăng nhập</button>
+                                            </div>
+                                            <div class="col-xs-6 text-right"
+                                                 style="margin-top: 5px; white-space: nowrap;">
+                                                <a href="#" class="btn_forget_password">Quên mật khẩu</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="register_form" class="tab-pane fade">
+                        <h3 class="text-center">Thông tin đăng ký</h3>
+                        <form class="form-horizontal">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="text" class="form-control" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" placeholder="Email"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="phone" class="form-control" placeholder="Số đện thoại">
+                                            </div>
+                                        </div>
+                                        <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách
+                                            Bảo
+                                            mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Xác nhận mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <img src="assets/img/input_google.png"
+                                                     style="border-radius: 4px; width: 100%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-blue">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-6 pad-left-desktop-20 text-center-mobile">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" style="max-height: 50px">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 phone_number text-center-mobile">
+                    <i class="icon icon_phone"></i> 0908 115 8860 <span>(Ha Noi)</span><br>
+                    <i class="icon icon_phone"></i> 0903 601 212 <span>(Tp.HCM)</span>
+                </div>
+                <div class="col-md-5 col-xs-12 text-right text-center-mobile">
+                    <div class="contact"><a href="vechungtoi.html">VỀ CHÚNG TÔI</a> | <a href="lienhe.html">LIÊN HỆ</a>
+                    </div>
+                    <div class="socical">
+                        <ul>
+                            <li>
+                                <a><i class="icon icon_youtube"></i></a><a><i class="icon icon_facebook"></i></a><a><i
+                                    class="icon icon_bing"></i></a>
+                            </li>
+                            <li>
+                                <form class="search-form" action="" method="get ">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm" name="s"
+                                               value="">
+                                        <button type="submit" class="btn submit"><i class="fa fa-search"
+                                                                                    aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="login-form">
+                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle-o"
+                                                                                          aria-hidden="true"></i> Đăng
+                                    nhập <i
+                                            class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="index.html">Trang chủ</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vé Khuyến
+                                mãi</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="vemaybayquocte_vnairline.html">vietnam Airlines</a></li>
+                                    <li><a href="vemaybayquocte.html">Vé Quốc Tế</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour du
+                                lịch</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="tourdulichhan.html" class="submenu" tabindex="-1">Tour Nhật Bản <i style="font-size: 19px" class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Charter</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Charter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Âu</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Mỹ</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Á</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">du lich tự
+                                túc</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://songhantourist.com/japanrailpass/">Japan Rail Pass</a></li>
+                                    <li><a href="http://songhantourist.com/hanavi/">Hanavi</a></li>
+                                    <li><a href="dulichtutuc_spFIT.html">Sản Phẩm Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="thongtindulich.html">thông tin du lịch</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">khám phá nhật bản</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="khamphanhatban.html">TOTTORI</a></li>
+                                    <li><a href="khamphanhatban.html">TOHOKO</a></li>
+                                    <li><a href="khamphanhatban.html">TOCHIGI</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+</header>
+<style>
+    .page_title {
+        background: url('assets/img/vemaybay/page_title.png') no-repeat;
+        background-size: cover;
+        background-position: center
+    }
+
+    .page_title h1 {
+        font-family: "UTM Copperplate";
+        display: none;
+        color: #f54401;
+    }
+
+    @media screen and (max-width: 768px) {
+        .page_title h1 {
+            display: block;
+            margin-top: 150px;
+        }
+
+        .page_title {
+            background: url('assets/img/vemaybay/page_title2.png');
+            background-position: center center;
+        }
+    }
+</style>
+<section class="page_title">
+    <div class="container">
+        <h1 class="text-center">Ưu đãi hàng tuần chuyến bay quốc tế</h1>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="active">Vé máy bay quốc tế</li>
+        </ul>
+    </div>
+</section>
+<section class="search">
+    <div class="container">
+        <ul class="nav nav-tabs responsive">
+            <li class="active"><a data-toggle="tab" href="#home">Từ Sài Gòn</a></li>
+            <li><a data-toggle="tab" href="#menu1">Từ Hà nội</a></li>
+            <li><a data-toggle="tab" href="#menu2">Từ Đà Nẵng</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="tab-content responsive">
+            <div id="home" class="tab-pane fade in active">
+                <form class="row">
+                    <div class=" col-md-2">
+                        <label>Hãng máy bay</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Chọn tất cả</option>
+                                <option>vietname airline</option>
+                                <option>jexstart</option>
+                                <option>viet jex</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Thời gian</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Điểm đến</option>
+                                <option>Tát cả</option>
+                                <option>Hà nội</option>
+                                <option>Tp HCM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Loại vé</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Tất cả</option>
+                                <option>vé thương gia</option>
+                                <option>vé phổ thông</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Mức giá (VNĐ)</label>
+                        <div class="layout-slider">
+                            <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                        </div>
+                    </div>
+                    <script type="text/javascript" charset="utf-8">
+                    </script>
+                    <div class="col-md-2 text-right">
+                        <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                    </div>
+                </form>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <form class="row">
+                    <div class=" col-md-2">
+                        <label>Hãng máy bay</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Chọn tất cả</option>
+                                <option>vietname airline</option>
+                                <option>jexstart</option>
+                                <option>viet jex</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Thời gian</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Điểm đến</option>
+                                <option>Tát cả</option>
+                                <option>Hà nội</option>
+                                <option>Tp HCM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Loại vé</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Tất cả</option>
+                                <option>vé thương gia</option>
+                                <option>vé phổ thông</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Mức giá (VNĐ)</label>
+                        <div class="layout-slider">
+                            <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                        </div>
+                    </div>
+                    <script type="text/javascript" charset="utf-8">
+                    </script>
+                    <div class="col-md-2 ">
+                        <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                    </div>
+                </form>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <form class="row">
+                    <div class=" col-md-2">
+                        <label>Hãng máy bay</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Chọn tất cả</option>
+                                <option>vietname airline</option>
+                                <option>jexstart</option>
+                                <option>viet jex</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Thời gian</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Điểm đến</option>
+                                <option>Tát cả</option>
+                                <option>Hà nội</option>
+                                <option>Tp HCM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Loại vé</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Tất cả</option>
+                                <option>vé thương gia</option>
+                                <option>vé phổ thông</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label>Mức giá (VNĐ)</label>
+                        <div class="layout-slider">
+                            <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                        </div>
+                    </div>
+                    <script type="text/javascript" charset="utf-8">
+                    </script>
+                    <div class="col-md-2 ">
+                        <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vemaybay quocte">
+    <div class="container">
+        <div class="row">
+            <div class="banner col-md-12">
+                <img src="assets/img/vemaybay/banner.png">
+            </div>
+            <div class="table_vemaybay col-md-12 ">
+                <table class=" rwd-table">
+                    <thead>
+                    <tr>
+                        <th>Hãng máy bay</th>
+                        <th>Chặng bay</th>
+                        <th>Giá vé</th>
+                        <th>Ngày bay</th>
+                        <th>Loại vé</th>
+                        <th class="text-center"></th>
+                    </tr>
+                    </thead>
+                    <tr>
+                        <td class="table_hangbay" data-th="Hãng máy bay">
+                            <img src="assets/img/vemaybay/1.png"><br/>
+                            <span class="name">Malaysia Airlines</span>
+                            <p>**Giá vé đã bao gồm <span>thuế</span> và <span>phí dịch vụ</span></p>
+                        </td>
+                        <td class="table_diemden" data-th="Chặng bay">
+                            Từ Sài Gòn đến <span class="hidden-xs"> <br></span> <span>Tokyo</span>
+                        </td>
+                        <td class="table_gia text-right" data-th="Giá vé">
+                            <span>300.000</span> VNĐ
+
+                        </td>
+                        <td class="table_thoigian" data-th="Ngày bay">
+                            20/10/2016 -> 28/02/2017
+                        </td>
+                        <td class="table_hangbay" data-th="Loại vé">Economy</td>
+                        <td class="text-center" data-th="Chi Tiết">
+                            <a class="btn btn-blue">Tìm kiếm</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_hangbay" data-th="Hãng máy bay">
+                            <img src="assets/img/vemaybay/2.png"><br/>
+                            <span class="name">Malaysia Airlines</span>
+                            <p>**Giá vé đã bao gồm <span>thuế</span> và <span>phí dịch vụ</span></p>
+                        </td>
+                        <td class="table_diemden" data-th="Chặng bay">
+                            Từ Sài Gòn đến <span class="hidden-xs"> <br></span> <span>Tokyo</span>
+                        </td>
+                        <td class="table_gia text-right" data-th="Giá vé">
+                            <span>300.000</span> VNĐ
+
+                        </td>
+                        <td class="table_thoigian" data-th="Ngày bay">
+                            20/10/2016 -> 28/02/2017
+                        </td>
+                        <td class="table_hangbay" data-th="Loại vé">Economy</td>
+                        <td class="text-center" data-th="Chi Tiết">
+                            <a class="btn btn-blue">Tìm kiếm</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_hangbay" data-th="Hãng máy bay">
+                            <img src="assets/img/vemaybay/3.png"><br/>
+                            <span class="name">Malaysia Airlines</span>
+                            <p>**Giá vé đã bao gồm <span>thuế</span> và <span>phí dịch vụ</span></p>
+                        </td>
+                        <td class="table_diemden" data-th="Chặng bay">
+                            Từ Sài Gòn đến <span class="hidden-xs"> <br></span> <span>Tokyo</span>
+                        </td>
+                        <td class="table_gia text-right" data-th="Giá vé">
+                            <span>300.000</span> VNĐ
+
+                        </td>
+                        <td class="table_thoigian" data-th="Ngày bay">
+                            20/10/2016 -> 28/02/2017
+                        </td>
+                        <td class="table_hangbay" data-th="Loại vé">Economy</td>
+                        <td class="text-center" data-th="Chi Tiết">
+                            <a class="btn btn-blue">Tìm kiếm</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_hangbay" data-th="Hãng máy bay">
+                            <img src="assets/img/vemaybay/4.png"><br/>
+                            <span class="name">Malaysia Airlines</span>
+                            <p>**Giá vé đã bao gồm <span>thuế</span> và <span>phí dịch vụ</span></p>
+                        </td>
+                        <td class="table_diemden" data-th="Chặng bay">
+                            Từ Sài Gòn đến <span class="hidden-xs"> <br></span> <span>Tokyo</span>
+                        </td>
+                        <td class="table_gia text-right" data-th="Giá vé">
+                            <span>300.000</span> VNĐ
+
+                        </td>
+                        <td class="table_thoigian" data-th="Ngày bay">
+                            20/10/2016 -> 28/02/2017
+                        </td>
+                        <td class="table_hangbay" data-th="Loại vé">Economy</td>
+                        <td class="text-center" data-th="Chi Tiết">
+                            <a class="btn btn-blue">Tìm kiếm</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table_hangbay" data-th="Hãng máy bay">
+                            <img src="assets/img/vemaybay/5.png"><br/>
+                            <span class="name">Malaysia Airlines</span>
+                            <p>**Giá vé đã bao gồm <span>thuế</span> và <span>phí dịch vụ</span></p>
+                        </td>
+                        <td class="table_diemden" data-th="Chặng bay">
+                            Từ Sài Gòn đến <span class="hidden-xs"> <br></span> <span>Tokyo</span>
+                        </td>
+                        <td class="table_gia text-right" data-th="Giá vé">
+                            <span>300.000</span> VNĐ
+
+                        </td>
+                        <td class="table_thoigian" data-th="Ngày bay">
+                            20/10/2016 -> 28/02/2017
+                        </td>
+                        <td class="table_hangbay" data-th="Loại vé">Economy</td>
+                        <td class="text-center" data-th="Chi Tiết">
+                            <a class="btn btn-blue">Tìm kiếm</a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
+<div class="theodoive">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1 text-center text-center-mobile">
+                <img src="assets/img/icon_ongdom.png">
+            </div>
+            <div class="col-md-8 text-center-mobile pad-left-desktop-35">
+                <h3>Quý khách muốn liên tục theo dõi giá vé?</h3>
+                <p>Ngay khi giá vé giảm xuống, chúng tôi sẽ thông báo ngay cho Quý khách</p>
+            </div>
+            <div class="col-md-3 text-right text-center-mobile">
+                <a class="btn btn-violet">Đăng ký ngay</a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="pre-footer">
+            <ul class="section_menu">
+                <li><a href="#">Vé Khuyến mãi</a></li>
+                <li><a href="tourdulichnhatban_HAN.html">Tour du lich</a></li>
+                <li><a href="dulichtutuc_spFIT.html">du lịch tự túc</a></li>
+                <li><a href="thongtindulich.html">thông tin du lịch</a></li>
+                <li><a href="khamphanhatban.html">khám phá nhật bản</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN - CHI NHÁNH TP.HCM
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lửng 01, tầng lửng, Tòa nhà Trung tâm tài chính Bảo Việt, 233 Đồng Khởi, P. Bến Nghé,
+                    Quận
+                    1 <br>
+                    Điện thoại: 08 3824 8831<br>
+                    Email: sgn.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN TẠI HÀ NỘI
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Tầng 10, Tòa nhà Hồng Hà Center, 25 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội<br>
+                    Điện thoại: 04 3936 5877<br>
+                    Email: han.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    VPĐD AEON CELADON TÂN PHÚ
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô T-11, Tầng 3, 30 Bờ bao Tân Thắng, P. Sơn Kỳ, Quận Tân Phú, TP. HCM<br>
+                    Điện thoại: 08 7305 7678<br>
+                    Email: info-aeonceladon@songhantouist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CHI NHÁNH AEON CANARY <br> BÌNH DƯƠNG
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô G47, Tầng G, 01 Đại lộ Bình Dương, P. Bình Hòa, Bình Dương <br>
+                    Điện thoại: 065 0376 3493 <br>
+                    Email: info-aeonbduong@songhantouist.com
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="power_by text-center">
+    <div class="container">
+        Bản quyền thuộc về Công ty TNHH TM Du Lịch và Dịch vụ Sông Hàn<br>
+        Giấy phép kinh doanh số 0400423715 do Sở Kế Hoạch và Đầu Tư TP. Đà Nẵng cấp ngày 27/05/2002
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Song Han</title>
+    <!-- meta key -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugin/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <link href="assets/plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick-theme.css">
+
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="assets/plugin/rs-plugin/css/settings.css" media="screen"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jshashtable-2.1_src.js"></script>
+
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/tmpl.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.slider.js"></script>
+    <script src="assets/plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript"
+            src="assets/plugin/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <ul class="nav nav-tabs user-form">
+                    <li class="active"><a data-toggle="tab" href="#login_form">Đăng nhập</a></li>
+                    <li><a data-toggle="tab" href="#register_form">Đăng ký</a></li>
+                </ul>
+                <div class="tab-content text-left">
+                    <div id="login_form" class="tab-pane fade in active ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>Đăng nhập khác:</h3>
+                                    <a href="#" class="btn btn-login-facebook margin-bot-15">Facebook</a>
+                                    <a href="#" class="btn btn-login-google margin-bot-15">Google</a>
+                                    <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                        mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Bạn đã là thành viên:</h3>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <button type="submit" class="btn btn-blue">Đăng nhập</button>
+                                            </div>
+                                            <div class="col-xs-6 text-right"
+                                                 style="margin-top: 5px; white-space: nowrap;">
+                                                <a href="#" class="btn_forget_password">Quên mật khẩu</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="register_form" class="tab-pane fade">
+                        <h3 class="text-center">Thông tin đăng ký</h3>
+                        <form class="form-horizontal">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="text" class="form-control" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" placeholder="Email"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="phone" class="form-control" placeholder="Số đện thoại">
+                                            </div>
+                                        </div>
+                                        <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                            mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Xác nhận mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <img src="assets/img/input_google.png"
+                                                     style="border-radius: 4px; width: 100%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-blue">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="hidden" data-toggle="modal" data-target="#quangcao">fsdfsd</a>
+<!-- Modal -->
+<div class="modal fade" id="quangcao" tabindex="-1" role="dialog" aria-labelledby="QuangCao">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <img src="assets/img/quangcao.jpg">
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('[data-target="#quangcao"]').trigger('click');
+    });
+</script>
+<style>
+    .modal-dialog {
+        width: 60%;
+    }
+</style>
+<header>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-6 pad-left-desktop-20 text-center-mobile">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" style="max-height: 50px">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 phone_number text-center-mobile">
+                    <i class="icon icon_phone"></i> 0908 115 8860 <span>(Ha Noi)</span><br>
+                    <i class="icon icon_phone"></i> 0903 601 212 <span>(Tp.HCM)</span>
+                </div>
+                <div class="col-md-5 col-xs-12 text-right text-center-mobile">
+                    <div class="contact"><a href="vechungtoi.html">VỀ CHÚNG TÔI</a> | <a href="lienhe.html">LIÊN HỆ</a>
+                    </div>
+                    <div class="socical">
+                        <ul>
+                            <li>
+                                <a><i class="icon icon_youtube"></i></a><a><i class="icon icon_facebook"></i></a><a><i
+                                    class="icon icon_bing"></i></a>
+                            </li>
+                            <li>
+                                <form class="search-form" action="" method="get ">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm" name="s"
+                                               value="">
+                                        <button type="submit" class="btn submit"><i class="fa fa-search"
+                                                                                    aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="login-form">
+                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle-o"
+                                                                                          aria-hidden="true"></i> Đăng
+                                    nhập <i
+                                            class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="index.html">Trang chủ</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Vé Khuyến
+                                mãi</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="vemaybayquocte_vnairline.html">vietnam Airlines</a></li>
+                                    <li><a href="vemaybayquocte.html">Vé Quốc Tế</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour du
+                                lịch</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="tourdulichhan.html" class="submenu" tabindex="-1">Tour Nhật Bản <i
+                                                style="font-size: 19px" class="fa fa-angle-right pull-right"
+                                                aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Charter</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Charter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Âu</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Mỹ</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Á</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">du lich tự
+                                túc</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://songhantourist.com/japanrailpass/">Japan Rail Pass</a></li>
+                                    <li><a href="http://songhantourist.com/hanavi/">Hanavi</a></li>
+                                    <li><a href="dulichtutuc_spFIT.html">Sản Phẩm Khác</a></li>
+                                </ul>
+                            </li>
+                            <li class=""><a href="thongtindulich.html">thông tin du lịch</a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">khám phá
+                                nhật bản</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="khamphanhatban.html">TOTTORI</a></li>
+                                    <li><a href="khamphanhatban.html">TOHOKO</a></li>
+                                    <li><a href="khamphanhatban.html">TOCHIGI</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="slider ">
+
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/img/slider1.png" alt="slidebg1" data-bgfit="cover"
+                         data-bgposition="left top"
+                         data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption large_normal_red skewfromrightshort customout"
+                         data-x="150"
+                         data-y="96"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 3"> Thưởng ngoạn <br> hoa anh đào đầu mùa
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption large_bold_red skewfromrightshort customout"
+                         data-x="600"
+                         data-y="300"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4"> 32.900.000
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption medium_thin_grey skewfromrightshort customout"
+                         data-x="870"
+                         data-y="320"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4"> VNĐ
+                    </div>
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption medium_thin_grey customin customout"
+                         data-x="600"
+                         data-y="370"
+                         data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index:5">Khởi hành: 28/01/2017 (6N5D)
+                    </div>
+
+                </li>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/img/slider1.png" alt="slidebg1" data-bgfit="cover"
+                         data-bgposition="left top"
+                         data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption large_normal_red skewfromrightshort customout"
+                         data-x="150"
+                         data-y="96"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 3"> Thưởng ngoạn <br> hoa anh đào đầu mùa
+                    </div>
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption large_bold_red skewfromrightshort customout"
+                         data-x="600"
+                         data-y="300"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4"> 32.900.000
+                    </div>
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption medium_thin_grey skewfromrightshort customout"
+                         data-x="870"
+                         data-y="320"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="800"
+                         data-easing="Back.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index: 4"> VNĐ
+                    </div>
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption medium_thin_grey customin customout"
+                         data-x="600"
+                         data-y="370"
+                         data-customin="x:0;y:100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:1;scaleY:3;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:0% 0%;"
+                         data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+                         data-speed="500"
+                         data-start="1300"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="500"
+                         data-endeasing="Power4.easeIn"
+                         data-captionhidden="on"
+                         style="z-index:5">Khởi hành: 28/01/2017 (6N5D)
+                    </div>
+
+                </li>
+
+            </ul>
+
+            <div class="tp-bannertimer"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var revapi;
+        jQuery(document).ready(function () {
+            revapi = jQuery('.tp-banner').revolution(
+                {
+                    delay: 9000,
+                    startwidth: 1200,
+                    startheight: 550,
+                    hideThumbs: 10,
+                    fullWidth: "on",
+                    forceFullWidth: "on",
+                    hideThumbs: "500"
+                });
+        });	//ready
+    </script>
+</section>
+
+<section class="search animated bounceInDown">
+    <div class="container">
+        <ul class="nav nav-tabs responsive">
+            <li class="active"><a data-toggle="tab" href="#home">Tour</a></li>
+            <li><a data-toggle="tab" href="#menu1">Vé Máy Bay </a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="tab-content responsive ">
+            <div id="home" class="tab-pane fade in active">
+                <form class="row">
+                    <div class=" col-md-2">
+                        <label>Tour</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập tên tour">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Thời gian</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Nơi đến</option>
+                                <option>3 ngày 2 đêm</option>
+                                <option>2 ngày 1 đêm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Khởi hành</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Nơi đến</option>
+                                <option>3 ngày 2 đêm</option>
+                                <option>2 ngày 1 đêm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Nơi đến</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Nơi đến</option>
+                                <option>3 ngày 2 đêm</option>
+                                <option>2 ngày 1 đêm</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label>Mức giá</label>
+                        <div class="layout-slider">
+                            <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                        </div>
+                    </div>
+                    <script type="text/javascript" charset="utf-8">
+                    </script>
+                    <div class="col-md-1">
+                        <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                    </div>
+                </form>
+            </div>
+            <div id="menu1" class="tab-pane fade vemaybay">
+                <ul class="nav nav-tabs responsive">
+                    <li class="active"><a data-toggle="tab" href="#ve_noidia">Nội địa</a></li>
+                    <li><a data-toggle="tab" href="#ve_quocte">Quốc tế</a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <div class="tab-content responsive ">
+                    <div id="ve_noidia" class="tab-pane fade in active">
+                        <form class="row">
+                            <div class=" col-md-2">
+                                <label>Từ</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Hà nội</option>
+                                        <option>Ninh Binh</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Đến</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Hà nội</option>
+                                        <option>Ninh Binh</option>
+                                        <option>Tp Hồ Chí Minh</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Loại vé</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Tất cả</option>
+                                        <option>vé thương gia</option>
+                                        <option>vé phổ thông</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label>Mức giá (VNĐ)</label>
+                                <div class="layout-slider">
+                                    <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                                </div>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                            </script>
+                            <div class="col-md-2 text-right">
+                                <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                            </div>
+                        </form>
+                    </div>
+                    <div id="ve_quocte" class="tab-pane fade">
+                        <form class="row">
+                            <div class=" col-md-2">
+                                <label>Khởi hành từ</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Sài Gòn</option>
+                                        <option>Hà Nội</option>
+                                        <option>Đà nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class=" col-md-2">
+                                <label>Hãng máy bay</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Chọn tất cả</option>
+                                        <option>vietname airline</option>
+                                        <option>jexstart</option>
+                                        <option>viet jex</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Thời gian</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Điểm đến</option>
+                                        <option>Tát cả</option>
+                                        <option>Hà nội</option>
+                                        <option>Tp HCM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <label>Loại vé</label>
+                                <div class="styled-select slate">
+                                    <select>
+                                        <option>Tất cả</option>
+                                        <option>vé thương gia</option>
+                                        <option>vé phổ thông</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <label>Mức giá (VNĐ)</label>
+                                <div class="layout-slider">
+                                    <input class="Slider2" type="slider" name="price" value="5000;50000"/>
+                                </div>
+                            </div>
+                            <script type="text/javascript" charset="utf-8">
+                            </script>
+                            <div class="col-md-2 ">
+                                <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="banner animated bounceInDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img/banner_1.png">
+            </div>
+            <div class="col-md-6">
+                <img src="assets/img/banner_2.png">
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h3 class="text_noibat">Tour nổi bật</h3>
+        </div>
+    </div>
+</section>
+<section class="tour_feature animated bounceInDown">
+    <div class="container">
+        <div class="row">
+            <div class="slider_feature slider1">
+                <div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_1.png">
+                            <i class="icon icon_love"></i>
+                        </div>
+
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">ngắm hoa trên cung dường vắng</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_2.png">
+                            <i class="icon icon_love"></i>
+                        </div>
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">Lễ hội hoa anh đào KAWAZU (5N4Đ)</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_1.png">
+                            <i class="icon icon_love"></i>
+                        </div>
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">ngắm hoa trên cung dường vắng</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_2.png">
+                            <i class="icon icon_love"></i>
+                        </div>
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">Lễ hội hoa anh đào KAWAZU (5N4Đ)</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_1.png">
+                            <i class="icon icon_love"></i>
+                        </div>
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">ngắm hoa trên cung dường vắng</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row item">
+                        <div class="item_img">
+                            <img src="assets/img/noibat_2.png">
+
+                        </div>
+                        <div class="item_content col-xs-offset-3">
+                            <div class="col-xs-offset-4">
+                                <h4 class="content_title">Lễ hội hoa anh đào KAWAZU (5N4Đ)</h4>
+                                <div class="content_description">
+                                    <p><strong>Hành trình</strong>: Hà Nội - Nhật Bản</p>
+                                    <p><strong>Khởi hành</strong>: 28/1/2017</p>
+                                </div>
+                                <div class="content_price">
+                                    <p class="price_old">34.900.000 VNĐ</p>
+                                    <p class="price_new">32.100.000 VNĐ</p>
+                                </div>
+                                <div class="content_button">
+                                    <a class="btn btn-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                                    <div class="pull-right info">
+                                        <i class="icon icon_human_stick" title="Số người đã mua"></i> 147 <i
+                                            class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tour_1 animated bounceInDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center margin-bot-20">
+                <h3><span>tour khởi hành từ</span><br>Hà Nội <span>đi</span> Nhật Bản</h3>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item pink">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion pink">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_1.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU
+                        </h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-pink pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item orange">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion orange">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_2.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-orange pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item yellow">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion yellow">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_3.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-yellow pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item blue">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion blue">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_4.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-light-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item yellow">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion yellow">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_5.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-yellow pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item blue">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion blue">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_6.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-light-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center margin-bot-20">
+                <a href="#" class="see-more"> Xem nhiều hơn</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tour_1 animated bounceInDown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center margin-bot-20">
+                <h3><span>tour khởi hành từ</span><br>Tp.HCM <span>đi</span> Nhật Bản</h3>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item pink">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion pink">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_11.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-pink pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item orange">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion orange">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_12.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-orange pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item yellow">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion yellow">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_13.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-yellow pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item blue">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion blue">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_14.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-light-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item yellow">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion yellow">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_15.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-yellow pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item blue">
+                    <div class="item_img">
+                        <div class="icon_up">Xem thêm <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+                        <div class="item_promotion blue">Giảm 2 triệu</div>
+                        <div class="logo_nhatban"><img src="assets/img/partner/5.png"></div>
+                        <img src="assets/img/tour_16.png">
+                    </div>
+                    <div class="item_content">
+                        <h4 class="content_title">Lễ hội hoa anh đào KAWAZU</h4>
+                        <div class="content_description">
+                            <p><strong>Hành trình:</strong> HÀ NỘI – TOKYO – NÚI PHÚ SỸ - LỄ HỘI HOA ANH ĐÀO KAWAZU
+                                -
+                                KAMAKURA</p>
+                            <p><strong>Khởi hành:</strong> 28/01/2017</p><i class="icon icon_love"></i>
+                        </div>
+                        <div class="row content_info">
+                            <div class="col-xs-7">
+                                <p class="price_old">34.900.000 VNĐ</p>
+                                <p class="price_new">32.100.000 VNĐ</p>
+                            </div>
+                            <div class="col-xs-5">
+                                <i class="icon icon_human_stick" title="Số người đã mua"></i> 147&nbsp;<i
+                                    class="icon icon_human" title="Số chỗ còn lại"></i> 420
+                                <a class="btn btn-light-blue pull-left" href="tour_detail.html">Xem Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center margin-bot-20">
+                <a href="#" class="see-more"> Xem nhiều hơn</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="tour_2 animated bounceInDown">
+    <div class="container">
+        <div class="text-center margin-bot-20">
+            <h3><span>tour khởi hành từ</span><br>Tp.HCM <span>đi</span> Các địa điểm khác</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="item big">
+                    <img src="assets/img/tour_big_1.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">Pháp - Thụy Sĩ - Ý</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="item">
+                    <img src="assets/img/tour_7.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">TRẢI NGHIỆM HOA ANH ĐÀO - ĐÀI LOAN</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/img/tour_8.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">Pháp - Thụy Sĩ - Ý</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a href="#" class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="item">
+                    <img src="assets/img/tour_7.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">TRẢI NGHIỆM HOA ANH ĐÀO - ĐÀI LOAN</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="item">
+                    <img src="assets/img/tour_8.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">TRẢI NGHIỆM HOA ANH ĐÀO - ĐÀI LOAN</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="item">
+                    <img src="assets/img/tour_9.png">
+                    <div class="img_title">
+                        <div class="row">
+                            <div class="col-md-12 img_title_1 ">TRẢI NGHIỆM HOA ANH ĐÀO - ĐÀI LOAN</div>
+                            <div class="col-md-6 img_title_2">
+                                <p>Thời gian: 12 ngày 9 đêm </p>
+                                <p>Khởi hành: 04/04/2017 </p>
+                            </div>
+                            <div class="col-md-6 text-right img_title_3">77,777,000 VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="img_caption text-center">
+                        <a class="more-tour" href="tour_detail.html">Xem Tour</a>
+                        <i class="icon icon_love"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center margin-bot-20">
+            <a href="#" class="see-more"> Xem nhiều hơn</a>
+        </div>
+    </div>
+
+</section>
+
+<section class="booking animated bounceInDown">
+    <div class="text-center booking_title">BOOKING ONLINE WITH <img height="50" src="assets/img/partner/2.png"></div>
+    <div class="booking_content">
+        <div class="container">
+            <div class="text-center booking_content_title">
+                Du lịch tự túc
+            </div>
+            <div class="slider_booking slider1">
+                <div>
+                    <img src="assets/img/booking_1.png">
+                    <div class="caption text-center blue">Japan Rail Pass</div>
+                </div>
+                <div>
+                    <img src="assets/img/booking_2.png">
+                    <div class="caption text-center gray">SIM 4G</div>
+                </div>
+                <div>
+                    <img src="assets/img/booking_3.png">
+                    <div class="caption text-center blue1">SIM 4G</div>
+                </div>
+                <div>
+                    <img src="assets/img/booking_4.png">
+                    <div class="caption text-center blue2">Sản phẩm FIT khác</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="news animated bounceInDown">
+    <div class="container">
+        <div class="col-md-8">
+            <h3>Thông tin du lịch</h3>
+            <div class="row item">
+                <div class="col-md-4">
+                    <img src="assets/img/news_1.png">
+                </div>
+                <div class="col-md-8">
+                    <a href="#" class="news_title">ĐỊA ĐIỂM CHỤP CHOẸT “RỪNG NA UY”</a>
+                    <div class="news_description">
+                        Bạn muốn hóa thân vào bộ phim?
+                        Hôm nay Ad sẽ giới thiệu cho các bạn một địa điểm tham quan mới - Mineyama Kogen (cao nguyên
+                        Mineyama)...
+                    </div>
+                </div>
+            </div>
+            <div class="row item">
+                <div class="col-md-4">
+                    <img src="assets/img/news_2.png">
+                </div>
+                <div class="col-md-8">
+                    <a href="#" class="news_title">MÙA ĐÔNG DU LỊCH NHẬT BẢN – MIỀN ĐẤT TUYẾT YUKIGUNI</a>
+                    <div class="news_description">
+                        Với hầu hết du khách Việt Nam – chưa một lần nhìn thấy tuyết. Khi nói tới mùa đông Nhật Bản sẽ
+                        có một cảm giác thích thú xen lẫn sợ hãi. Thích thú...
+                    </div>
+                </div>
+            </div>
+            <div class="row item">
+                <div class="col-md-4">
+                    <img src="assets/img/news_3.png">
+                </div>
+                <div class="col-md-8">
+                    <a href="#" class="news_title">OMAMORI - BÙA HỘ MỆNH CỦA NGƯỜI NHẬT</a>
+                    <div class="news_description">
+                        Omamori là tên gọi những chiếc bùa may mắn thường được thỉnh tại các ngôi đền trên khắp nước
+                        Nhật. Omamori tượng trưng cho các vị thần Shinto, có ý nghĩa mang lại sự bảo vệ...
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="see-more">XEM TẤT CẢ</a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3>Thông tin du lịch</h3>
+            <div class="khampha">
+                <img src="assets/img/khampha_1.png">
+                <div class="caption yellow">tottori</div>
+                <div class="img_caption text-center">
+                    <a class="more-tour">Khám phá</a>
+                </div>
+            </div>
+            <div class="khampha">
+                <img src="assets/img/khampha_2.png">
+                <div class="caption black">tohoku</div>
+                <div class="img_caption text-center">
+                    <a class="more-tour">Khám phá</a>
+                </div>
+            </div>
+            <div class="khampha red">
+                <img src="assets/img/khampha_3.png">
+                <div class="caption">tochigi</div>
+                <div class="img_caption text-center">
+                    <a class="more-tour">Khám phá</a>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="see-more">XEM TẤT CẢ</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partner animated bounceInDown">
+    <div class="container">
+        <div class="slider_partner">
+            <div>
+                <img src="assets/img/partner/1.jpg">
+            </div>
+            <div>
+                <img src="assets/img/partner/2.jpg">
+            </div>
+            <div>
+                <img src="assets/img/partner/3.png">
+            </div>
+            <div>
+                <img src="assets/img/partner/4.png">
+            </div>
+
+            <div>
+                <img src="assets/img/partner/6.png">
+            </div>
+            <div>
+                <img src="assets/img/partner/1.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="margin-bottom: -30px;">
+        <img style="margin: auto" src="assets/img/footer_bg.png">
+    </div>
+</section>
+<footer class="animated bounceInDown">
+    <div class="container">
+        <div class="pre-footer">
+            <ul class="section_menu">
+                <li><a href="#">Vé Khuyến mãi</a></li>
+                <li><a href="tourdulichnhatban_HAN.html">Tour du lich</a></li>
+                <li><a href="dulichtutuc_spFIT.html">du lịch tự túc</a></li>
+                <li><a href="thongtindulich.html">thông tin du lịch</a></li>
+                <li><a href="khamphanhatban.html">khám phá nhật bản</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN - CHI NHÁNH TP.HCM
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lửng 01, tầng lửng, Tòa nhà Trung tâm tài chính Bảo Việt, 233 Đồng Khởi, P. Bến Nghé, Quận
+                    1 <br>
+                    Điện thoại: 08 3824 8831<br>
+                    Email: sgn.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN TẠI HÀ NỘI
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Tầng 10, Tòa nhà Hồng Hà Center, 25 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội<br>
+                    Điện thoại: 04 3936 5877<br>
+                    Email: han.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    VPĐD AEON CELADON TÂN PHÚ
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô T-11, Tầng 3, 30 Bờ bao Tân Thắng, P. Sơn Kỳ, Quận Tân Phú, TP. HCM<br>
+                    Điện thoại: 08 7305 7678<br>
+                    Email: info-aeonceladon@songhantouist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CHI NHÁNH AEON CANARY <br> BÌNH DƯƠNG
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô G47, Tầng G, 01 Đại lộ Bình Dương, P. Bình Hòa, Bình Dương <br>
+                    Điện thoại: 065 0376 3493 <br>
+                    Email: info-aeonbduong@songhantouist.com
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="power_by text-center">
+    <div class="container">
+        Bản quyền thuộc về Công ty TNHH TM Du Lịch và Dịch vụ Sông Hàn<br>
+        Giấy phép kinh doanh số 0400423715 do Sở Kế Hoạch và Đầu Tư TP. Đà Nẵng cấp ngày 27/05/2002
+    </div>
+</div>
+</body>
+</html>

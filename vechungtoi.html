@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Song Han</title>
+    <!-- meta key -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- bxSlider CSS file -->
+    <link href="assets/plugin/jquery.bxslider/jquery.bxslider.css" rel="stylesheet"/>
+
+    <link href="assets/plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-1.6.0/slick/slick-theme.css">
+
+    <!-- bin/jquery.slider.min.css -->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.blue.css" type="text/css">
+    <!--<link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.plastic.css" type="text/css">-->
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.css" type="text/css">
+    <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.plastic.css"
+          type="text/css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/bootstrap/js/responsive-tabs.js"></script>
+
+    <!-- bxSlider Javascript file -->
+    <script src="assets/plugin/jquery.bxslider/jquery.bxslider.min.js"></script>
+
+
+    <!-- bin/jquery.slider.min.js -->
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jshashtable-2.1_src.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.numberformatter-1.2.3.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/tmpl.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.dependClass-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/draggable-0.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.slider.js"></script>
+    <script src="assets/plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</head>
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <ul class="nav nav-tabs user-form">
+                    <li class="active"><a data-toggle="tab" href="#login_form">Đăng nhập</a></li>
+                    <li><a data-toggle="tab" href="#register_form">Đăng ký</a></li>
+                </ul>
+                <div class="tab-content text-left">
+                    <div id="login_form" class="tab-pane fade in active ">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <h3>Đăng nhập khác:</h3>
+                                    <a href="#" class="btn btn-login-facebook margin-bot-15">Facebook</a>
+                                    <a href="#" class="btn btn-login-google margin-bot-15">Google</a>
+                                    <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                        mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h3>Bạn đã là thành viên:</h3>
+                                    <form class="form-horizontal">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" id="inputEmail3"
+                                                       placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" id="inputPassword3"
+                                                       placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <button type="submit" class="btn btn-blue">Đăng nhập</button>
+                                            </div>
+                                            <div class="col-xs-6 text-right"
+                                                 style="margin-top: 5px; white-space: nowrap;">
+                                                <a href="#" class="btn_forget_password">Quên mật khẩu</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="register_form" class="tab-pane fade">
+                        <h3 class="text-center">Thông tin đăng ký</h3>
+                        <form class="form-horizontal">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="text" class="form-control" placeholder="Họ tên">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="email" class="form-control" placeholder="Email"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="phone" class="form-control" placeholder="Số đện thoại">
+                                            </div>
+                                        </div>
+                                        <p class="rule">Bằng cách tiếp tục, bạn đồng ý với <a href="#">Chính sách Bảo
+                                            mật</a> và <a href="#">Điều khoản Sử dụng</a> của chúng tôi.</p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control" placeholder="Mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input type="password" class="form-control"
+                                                       placeholder="Xác nhận mật khẩu">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <img src="assets/img/input_google.png"
+                                                     style="border-radius: 4px; width: 100%">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <button type="submit" class="btn btn-blue">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-6 pad-left-desktop-20 text-center-mobile">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" style="max-height: 50px">
+                    </a>
+                </div>
+                <div class="col-md-3 col-xs-6 phone_number text-center-mobile">
+                    <i class="icon icon_phone"></i> 0908 115 8860 <span>(Ha Noi)</span><br>
+                    <i class="icon icon_phone"></i> 0903 601 212 <span>(Tp.HCM)</span>
+                </div>
+                <div class="col-md-5 col-xs-12 text-right text-center-mobile">
+                    <div class="contact"><a href="vechungtoi.html">VỀ CHÚNG TÔI</a> | <a href="lienhe.html">LIÊN HỆ</a>
+                    </div>
+                    <div class="socical">
+                        <ul>
+                            <li>
+                                <a><i class="icon icon_youtube"></i></a><a><i class="icon icon_facebook"></i></a><a><i class="icon icon_bing"></i></a>
+                            </li>
+                            <li>
+                                <form class="search-form" action="" method="get ">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Tìm kiếm" name="s"
+                                               value="">
+                                        <button type="submit" class="btn submit"><i class="fa fa-search"
+                                                                                    aria-hidden="true"></i></button>
+                                    </div>
+                                </form>
+                            </li>
+                            <li class="login-form">
+                                <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user-circle-o"
+                                                                                          aria-hidden="true"></i> Đăng
+                                    nhập <i
+                                            class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="container">
+            <nav class="navbar navbar-default">
+                <div class="">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li><a href="vemaybayquocte.html">Vé Khuyến mãi</a></li>
+                            <li class="active dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tour du
+                                lịch</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu">
+                                        <a href="tourdulichhan.html" class="submenu" tabindex="-1">Tour Nhật Bản <i style="font-size: 19px" class="fa fa-angle-right pull-right" aria-hidden="true"></i></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Sakura</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HAN Charter</a></li>
+                                            <li><a href="tourdulichnhatban_HAN.html">HCM Charter</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Âu</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Mỹ</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Á</a></li>
+                                    <li><a href="tourdulich_nuockhac.html">Tour Châu Úc</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="dulichtutuc_spFIT.html">du lich tự túc</a></li>
+                            <li><a href="thongtindulich.html">thông tin du lịch</a></li>
+                            <li><a href="#">khám phá nhật bản</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="page_title vechungtoi">
+    <div class="container">
+        <div class="text-center">
+            <h1>Về Chúng Tôi</h1>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="#">Trang chủ</a></li>
+            <li class="active">Về chúng tôi</li>
+        </ul>
+    </div>
+
+</section>
+<section class="page_content">
+    <div class="container">
+        <h2 class="text-center">CÔNG TY TNHH THƯƠNG MẠI DU LỊCH VÀ DỊCH VỤ SÔNG HÀN</h2>
+        <p>VỀ CHÚNG TÔI</p>
+        <p>Trải qua hơn 10 năm hình thành và phát triển CÔNG TY TNHH THƯƠNG MẠI DU LỊCH VÀ DỊCH VỤ SÔNG HÀN đã có những
+            bước tiến không ngừng trong việc thiết kế chương trình du lịch trọn gói cho hàng nghìn khách hàng trong nước
+            và quốc tế tham quan Việt Nam.</p>
+        <br>
+        <p>CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI DU LỊCH VÀ DỊCH VỤ SÔNG HÀN CHI NHÁNH TẠI TP. HCM</p>
+        <ul>
+            <li>Kinh doanh lữ hành quốc tế và lữ hành nội địa.</li>
+            <li>Đại lý mua bán ký gửi hàng hóa</li>
+            <li>Kinh doanh dịch vụ nhà hàng</li>
+            <li>Tư vấn du học</li>
+            <li>Đại lý bán vé máy bay, tàu hỏa</li>
+            <li>Dịch vụ Quảng cáo</li>
+            <li>Kinh doanh vận tải khách theo hợp đồng; kinh doanh vận chuyển khách du lịch</li>
+            <li>Thiết kế phần mềm</li>
+            <li>Bán hàng công nghệ phẩm, hàng thủ công mỹ nghệ</li>
+        </ul>
+        <!--<div class="row">-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/1.png">-->
+                <!--<p class="text-center img_caption">Kinh doanh lữ hành quốc tế<br>-->
+                    <!--và lữ hành nội địa.</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/2.png">-->
+                <!--<p class="text-center img_caption">Đại lý mua bán ký gửi hàng hóa</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/3.png">-->
+                <!--<p class="text-center img_caption">Kinh doanh dịch vụ nhà hàng</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/4.png">-->
+                <!--<p class="text-center img_caption">Tư vấn du học</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/5.png">-->
+                <!--<p class="text-center img_caption">Đại lý bán vé máy bay, tàu hỏa</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/6.png">-->
+                <!--<p class="text-center img_caption">Dịch vụ Quảng cáo</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/7.png">-->
+                <!--<p class="text-center img_caption">Kinh doanh vận tải khách theo hợp đồng;<br>-->
+                    <!--Kinh doanh vận chuyển khách du lịch</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/8.png">-->
+                <!--<p class="text-center img_caption">Thiết kế phần mềm</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-4 col-sm-6 col-xs-12">-->
+                <!--<img src="assets/img/vechungtoi/9.png">-->
+                <!--<p class="text-center img_caption">Bán hàng công nghệ phẩm,<br>-->
+                    <!--hàng thủ công mỹ nghệ</p>-->
+            <!--</div>-->
+        <!--</div>-->
+        <p><strong>THÀNH TÍCH</strong></p>
+        <ul>
+            <li>Năm 2005 và 2006 được Cục thuế Thành phố Đà Nẵng cấp giấy khen vì có thành tích chấp hành tốt các chính sách và nộp thuế.</li>
+            <li>Năm 2006 được Tổng cục thuế khen thưởng.</li>
+            <li>Năm 2006 và 2007 được UBND huyện Hòa Vang tặng giấy khen.</li>
+            <li>Năm 2010 đến 2012 được Cục thuế Thành phố Đà Nẵng cấp giấy khen.</li>
+        </ul>
+        <br>
+        <p><strong>SỨ MỆNH</strong></p>
+        <p>Sứ mệnh của chúng tôi là trở thành một Doanh nghiệp Lữ hành hàng đầu Việt Nam. Thông qua các hoạt động du lịch để nâng cao hiểu biết của mọi khách hàng về tôn giáo văn hóa của những điểm đến trên toàn thế giới. </p>
+    </div>
+</section>
+
+<section class="partner">
+    <div class="container">
+        <div class="slider_partner">
+            <div>
+                <img src="assets/img/partner/1.jpg">
+            </div>
+            <div>
+                <img src="assets/img/partner/2.jpg">
+            </div>
+            <div>
+                <img src="assets/img/partner/3.png">
+            </div>
+            <div>
+                <img src="assets/img/partner/4.png">
+            </div>
+
+            <div>
+                <img src="assets/img/partner/6.png">
+            </div>
+            <div>
+                <img src="assets/img/partner/1.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="text-center" style="margin-bottom: -30px;">
+        <img style="margin: auto" src="assets/img/footer_bg.png">
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="pre-footer">
+            <ul class="section_menu">
+                <li><a href="#">Vé Khuyến mãi</a></li>
+                <li><a href="tourdulichnhatban_HAN.html">Tour du lich</a></li>
+                <li><a href="dulichtutuc_spFIT.html">du lịch tự túc</a></li>
+                <li><a href="thongtindulich.html">thông tin du lịch</a></li>
+                <li><a href="khamphanhatban.html">khám phá nhật bản</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN - CHI NHÁNH TP.HCM
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lửng 01, tầng lửng, Tòa nhà Trung tâm tài chính Bảo Việt, 233 Đồng Khởi, P. Bến Nghé, Quận
+                    1 <br>
+                    Điện thoại: 08 3824 8831<br>
+                    Email: sgn.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CÔNG TY TNHH TM DU LỊCH VÀ DỊCH VỤ SÔNG HÀN TẠI HÀ NỘI
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Tầng 10, Tòa nhà Hồng Hà Center, 25 Lý Thường Kiệt, Hoàn Kiếm, Hà Nội<br>
+                    Điện thoại: 04 3936 5877<br>
+                    Email: han.obvn@songhantourist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    VPĐD AEON CELADON TÂN PHÚ
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô T-11, Tầng 3, 30 Bờ bao Tân Thắng, P. Sơn Kỳ, Quận Tân Phú, TP. HCM<br>
+                    Điện thoại: 08 7305 7678<br>
+                    Email: info-aeonceladon@songhantouist.com
+                </div>
+            </div>
+            <div class="col-md-3 item">
+                <div class="item_title">
+                    CHI NHÁNH AEON CANARY <br> BÌNH DƯƠNG
+                </div>
+                <div class="item_content">
+                    Địa chỉ: Lô G47, Tầng G, 01 Đại lộ Bình Dương, P. Bình Hòa, Bình Dương <br>
+                    Điện thoại: 065 0376 3493 <br>
+                    Email: info-aeonbduong@songhantouist.com
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="power_by text-center">
+    <div class="container">
+        Bản quyền thuộc về Công ty TNHH TM Du Lịch và Dịch vụ Sông Hàn<br>
+        Giấy phép kinh doanh số 0400423715 do Sở Kế Hoạch và Đầu Tư TP. Đà Nẵng cấp ngày 27/05/2002
+    </div>
+</div>
+</body>
+</html>
