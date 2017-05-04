@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.plastic.css"
           type="text/css">
 
+    <link rel="stylesheet" href="assets/plugin/prettyPhoto_compressed_3.1.6/css/prettyPhoto.css" type="text/css"
+          media="screen" title="prettyPhoto main stylesheet" charset="utf-8"/>
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
@@ -46,7 +49,7 @@
     <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jquery.slider.js"></script>
     <script src="assets/plugin/slick-1.6.0/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="assets/js/masonry.pkgd.min.js" type="text/javascript"></script>
-
+    <script src="assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -293,7 +296,7 @@
 </section>
 <style>
     .page_title {
-        background: url('assets/img/gallery/bg_1.png') no-repeat;
+        background: url('assets/img/gallery/bg.png') no-repeat;
         background-size: cover;
         background-position: center
     }
@@ -301,119 +304,88 @@
 </style>
 <section class="page_content album">
     <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_1.png">
+        <div class="grid  ">
+            <!-- add sizing element for columnWidth -->
+            <div class="grid-sizer col-md-4">
+
+            </div>
+            <!-- items use Bootstrap .col- classes -->
+            <div class="grid-item col-md-8">
+                <!-- wrap item content in its own element -->
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_3.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_2.png">
+            <div class="grid-item col-md-4">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_2.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_1.png">
+            <div class="grid-item col-md-4">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_1.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_2.png">
+            <div class="grid-item col-md-4">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_2.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_1.png">
+            <div class="grid-item col-md-4">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_1.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_2.png">
+            <div class="grid-item col-md-4">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_2.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_1.png">
+
+            <div class="grid-item col-md-8">
+                <div class="grid-item-content">
+                    <a href="#" onclick="$.prettyPhoto.open(api_gallery,api_titles,api_descriptions); return false">
+                        <img src="assets/img/gallery/img_4.png">
                     </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_2.png">
-                    </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="tour">
-                    <a href="album_img.html">
-                        <img src="assets/img/gallery/album_1.png">
-                    </a>
-                    <div class="infomation">
-                        <h4>Nhật bản</h4>
-                        <p class="description">Lorem ipsum dolor sit amet, vestibulum sem orci vulputate, libero etiam,
-                            eget ut, eu inceptos ac integer enim et, in mi mi pellentesque arcu vestibulum euismod.</p>
-                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 </section>
+<style>
+    .grid-item {
+        margin-bottom: 30px;
+    }
+</style>
+<script type="text/javascript" charset="utf-8">
+    api_gallery = ['assets/img/gallery/img_2.png', 'assets/img/gallery/img_1.png', 'assets/img/gallery/img_3.png'];
+    api_titles = ['image 1', 'image 2', 'image 3'];
+    api_descriptions = ['Description 1', 'Description 2', 'Description 3'];
+</script>
+<script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+        $('.grid').masonry({
+            itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
+            columnWidth: '.grid-sizer',
+            percentPosition: true
+        })
+        $(".gallery a[rel^='prettyPhoto']").prettyPhoto();
 
+    })
+</script>
 <footer>
     <div class="container">
         <div class="pre-footer">
