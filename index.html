@@ -42,7 +42,7 @@
     <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
-
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
@@ -452,6 +452,7 @@
         <ul class="nav nav-tabs responsive">
             <li class="active"><a data-toggle="tab" href="#home">Tour</a></li>
             <li><a data-toggle="tab" href="#menu1">Vé Máy Bay </a></li>
+            <li><a data-toggle="tab" href="#menu2">Du Lịch Tự Túc </a></li>
         </ul>
         <div class="clearfix"></div>
         <div class="tab-content responsive ">
@@ -616,6 +617,36 @@
                         </form>
                     </div>
                 </div>
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <form class="row">
+                    <div class=" col-md-3">
+                        <label>Sản phẩm</label>
+                        <input type="text" class="form-control" id="name" placeholder="Nhập từ khóa">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Khu Vực</label>
+                        <div class="styled-select slate">
+                            <select>
+                                <option>Hokkaido</option>
+                                <option>Tohoku</option>
+                                <option>Kanto</option>
+                                <option>Chubu</option>
+                                <option>Kansai</option>
+                                <option>Kyushu</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-5">
+                        
+                    </div>
+                    
+                    </script>
+                    <div class="col-md-1">
+                        <input type="submit" class="btn btn-blue" value="Tìm kiếm">
+                    </div>
+                </form>
             </div>
         </div>
     </div>

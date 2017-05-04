@@ -564,7 +564,7 @@ i.icon.icon_currency {
 
 .tour_feature .item .item_content .content_button {
     position: absolute;
-    bottom: 15px;
+    bottom: 30px;
 }
 
 .tour_feature .item .item_content .content_button .info {
@@ -576,6 +576,7 @@ i.icon.icon_currency {
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 10px;
+    font-weight: 600; 
 }
 
 .tour_feature .item .item_content .content_description {
@@ -673,7 +674,7 @@ i.icon.icon_currency {
 
 .tour_1 .item .icon_up {
     position: absolute;
-    bottom: 40px;
+    bottom: 39px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.5);
     right: 0;
@@ -1651,8 +1652,9 @@ a.btn_forget_password {
     }
 
     .page_title h1 {
-        font-size: 50px;
-        margin-top: 200px;
+        font-size: 40px !important;
+        padding-top: 40px !important;
+        margin-top: 0 !important
     }
 
     .pre-header .socical {
@@ -1692,7 +1694,7 @@ a.btn_forget_password {
     .tour_1 .item .item_content {
         padding-top: 5px;
         position: absolute;
-        top: calc(100% - 40px);
+        top: calc(100% - 39px);
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
@@ -1943,6 +1945,39 @@ a.btn_forget_password {
     text-align: right;
 }
 
+/* Back to top */
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:#3498db;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+        z-index: 9999999;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+}
+#scroll:hover {
+    background-color:#e74c3c;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
+}
 @media (min-width: 480px) {
     .rwd-table td:before {
         display: none;
@@ -2182,6 +2217,9 @@ a.btn_forget_password {
 }
 
 @media screen and (max-width: 480px) {
+    .page_title{
+        min-height: 200px;
+    }
     .tour_feature .item .item_img img {
         max-width: 150px;
     }

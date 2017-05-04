@@ -2,6 +2,17 @@ $(document).ready(function () {
     $(document).on("click",".btn-map-more", function(){
         $('body, html').animate({scrollTop: $('#mapdiv').offset().top});
     });
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    });
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    });
     $(".Slider2").slider(
         {
             from: 0,
@@ -111,6 +122,3 @@ $(document).ready(function () {
         }
     })
 });
-(function ($) {
-    fakewaffle.responsiveTabs(['xs', 'sm']);
-})(jQuery);
