@@ -1,8 +1,12 @@
 /* font */
 @font-face {
-    font-family: "UTM Avo";
-    src: url('../font/UTM_Avo.ttf');
+  font-family: 'UTM Avo';
+  src:  url('../font/UTMAvo.eot?#iefix') format('embedded-opentype'),  
+        url('../font/UTMAvo.woff') format('woff'), url('../font/UTMAvo.ttf')  format('truetype'), url('../font/UTMAvo.svg#UTMAvo') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 @font-face {
     font-family: "icomoon";
@@ -303,6 +307,8 @@ i.icon.icon_currency {
 /* breadcrumb */
 .breadcrumb {
     background: transparent;
+    padding:8px 0px;
+    margin-bottom:0px;
 }
 
 .breadcrumb > li + li:before {
@@ -621,7 +627,7 @@ i.icon.icon_currency {
 .tour_1 h3 {
     font-size: 24px;
     color: #152ac3;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .tour_1 h3 span {
@@ -629,7 +635,7 @@ i.icon.icon_currency {
     font-size: 16px;
     color: #444444;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .tour_1 .item {
@@ -741,13 +747,17 @@ i.icon.icon_currency {
 }
 
 .tour_1 .item .item_content .price_new {
-    font-size: 24px;
+    font-size: 22px;
     color: #f24300;
-    font-weight: 800;
+    font-weight:600;
 }
 
-.tour_1 .item .item_content .content_title {
-    font-size: 18px;
+.tour_1 .item .item_content .content_title 
+{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    min-height: 20px;
 }
 
 .tour_1 .item .item_content .content_description {
@@ -778,7 +788,7 @@ i.icon.icon_currency {
 .tour_2 h3 {
     font-size: 24px;
     color: #152ac3;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .tour_2 h3 span {
@@ -786,7 +796,7 @@ i.icon.icon_currency {
     font-size: 16px;
     color: #444444;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .tour_2 .item {
@@ -2061,6 +2071,8 @@ a.btn_forget_password {
 .thongtincanhan.page_content .news h3{
     margin-top: 0px;
 }
+
+
 
 .tour_yeuthich .tour {
     overflow: hidden;
