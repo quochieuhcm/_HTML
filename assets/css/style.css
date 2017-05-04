@@ -576,7 +576,7 @@ i.icon.icon_currency {
     font-size: 16px;
     text-transform: uppercase;
     padding-top: 10px;
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .tour_feature .item .item_content .content_description {
@@ -1948,36 +1948,131 @@ a.btn_forget_password {
 /* Back to top */
 
 #scroll {
-    position:fixed;
-    right:10px;
-    bottom:10px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    background-color:#3498db;
-    text-indent:-9999px;
-    display:none;
-    -webkit-border-radius:60px;
-    -moz-border-radius:60px;
-    border-radius:60px;
-        z-index: 9999999;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    z-index: 9999999;
 }
+
 #scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-12px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color:#ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
 }
+
 #scroll:hover {
-    background-color:#e74c3c;
-    opacity:1;filter:"alpha(opacity=100)";
-    -ms-filter:"alpha(opacity=100)";
+    background-color: #e74c3c;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
 }
+
+.profile {
+    background: #e5e5e5;
+    padding: 30px 15px;
+}
+
+.profile .avatar img {
+    text-align: center;
+}
+
+.profile .infomation .infomation {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tour_dadat .tour {
+    padding: 15px;
+    border-bottom: 1px #ccc dashed;
+}
+
+.tour_dadat .tour:last-child {
+    border-bottom: none;
+}
+
+.tour_dadat .tour .img {
+    padding: 0;
+}
+
+.tour_dadat .tour .img img {
+    width: 100%
+}
+
+.tour_dadat .tour .infomation .giatien .price_old {
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: line-through;
+    margin-bottom: 0;
+}
+
+.tour_dadat .tour .infomation .giatien .price_new {
+    font-size: 20px;
+    color: #f24300;
+    font-weight: 800;
+}
+
+.tour_dadat .tour .infomation p {
+    margin-bottom: 0;
+}
+
+.tour_dadat .tour .infomation .title {
+    margin-top: 0;
+}
+
+.thongtincanhan.page_content .item {
+    border: none
+}
+
+.thongtincanhan.page_content .news {
+    padding: 15px;
+}
+
+
+
+.tour_yeuthich .tour {
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.tour_yeuthich .tour:last-child {
+    border: none;
+}
+
+.tour_yeuthich .tour .img img {
+    width: 100%;
+}
+
+.sp_da_mua .sanpham {
+    text-align: center;
+}
+
+hr.grey_line {
+    border-top: 1px solid #ccc;
+    width: 100%;
+}
+
+.tour_yeuthich h3 {
+    margin-top: 0;
+
+}
+
 @media (min-width: 480px) {
     .rwd-table td:before {
         display: none;
@@ -2014,6 +2109,9 @@ a.btn_forget_password {
     .rwd-table th,
     .rwd-table td {
         padding: 10px !important;
+    }
+    .tour_yeuthich .tour .img {
+        padding: 0;
     }
 }
 
@@ -2217,9 +2315,10 @@ a.btn_forget_password {
 }
 
 @media screen and (max-width: 480px) {
-    .page_title{
+    .page_title {
         min-height: 200px;
     }
+
     .tour_feature .item .item_img img {
         max-width: 150px;
     }
@@ -2327,7 +2426,8 @@ a.btn_forget_password {
     .tour_1 .item .item_content .content_info {
         white-space: nowrap;
     }
-    .tour_1 .item .item_img > img,.tour_1 .item .item_img{
+
+    .tour_1 .item .item_img > img, .tour_1 .item .item_img {
         min-height: 270px;
     }
 }
