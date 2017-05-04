@@ -369,6 +369,30 @@
     .grid-item {
         margin-bottom: 30px;
     }
+
+
+    div.pp_default .pp_content_container .pp_details {
+        display: none !important;
+    }
+
+    .pp_gallery {
+        display: block !important;
+        margin-top: 20px;
+    }
+
+    .div.pp_default .pp_content, div.pp_default .pp_top .pp_left, div.pp_default .pp_top .pp_middle, div.pp_default .pp_top .pp_right, div.pp_default .pp_content_container .pp_right, div.pp_default .pp_content_container .pp_left, div.pp_default .pp_bottom .pp_left, div.pp_default .pp_bottom .pp_middle,
+    div.pp_default .pp_bottom .pp_right {
+        background-color: transparent !important;
+        background: transparent !important;
+    }
+
+    div.pp_default .pp_content, div.light_rounded .pp_content {
+        background-color: transparent !important;
+    }
+
+    .pp_gallery li {
+        margin: 0 4px 0 0 !important;
+    }
 </style>
 <script type="text/javascript" charset="utf-8">
     api_gallery = ['assets/img/gallery/img_2.png', 'assets/img/gallery/img_1.png', 'assets/img/gallery/img_3.png'];
@@ -381,7 +405,7 @@
             itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
             columnWidth: '.grid-sizer',
             percentPosition: true
-        })
+        });
         $(".gallery a[rel^='prettyPhoto']").prettyPhoto();
 
     })
