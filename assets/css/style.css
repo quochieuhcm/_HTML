@@ -1995,6 +1995,18 @@ a.btn_forget_password {
     font-size: 18px;
     font-weight: 400;
 }
+.tour_dadat{
+    margin-top: 20px;
+}
+.tour_dadat .data{
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 0px 30px;
+    margin-bottom: 20px;
+}
+.tour_dadat .data h3{
+    margin: 15px 0;
+}
 
 .tour_dadat .tour {
     padding: 15px;
@@ -2039,10 +2051,16 @@ a.btn_forget_password {
 }
 
 .thongtincanhan.page_content .news {
-    padding: 15px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: 1px solid #ccc;
+    clear: both;
 }
 
 
+.thongtincanhan.page_content .news h3{
+    margin-top: 0px;
+}
 
 .tour_yeuthich .tour {
     overflow: hidden;
