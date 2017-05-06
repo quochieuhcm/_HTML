@@ -1,5 +1,5 @@
 /* font */
-/*
+
 @font-face {
   font-family: 'UTM Avo';
   src:  url('../font/UTMAvo.eot?#iefix') format('embedded-opentype'),  
@@ -7,13 +7,13 @@
   font-weight: normal;
   font-style: normal;
 }
-*/
+/* 
 @font-face {
     font-family: 'UTM Avo';
     src: url('../font/UTMAvo/UTMAvo.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 
 @font-face {
