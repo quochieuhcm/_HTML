@@ -766,6 +766,7 @@ i.icon.icon_currency {
     text-transform: uppercase;
     font-weight: 600;
     min-height: 20px;
+	line-height: 18px;
 }
 
 .tour_1 .item .item_content .content_description {
