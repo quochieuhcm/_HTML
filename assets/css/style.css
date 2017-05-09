@@ -2373,6 +2373,17 @@ hr.grey_line {
         background: rgba(0, 0, 0, 0.3);
     }
 
+	 .page_content .sidebar .item .item_title {
+		height: 55px;
+		overflow: hidden;
+		font-size: 18px;
+		margin-top: 5px;
+		text-align: left;
+		font-weight: 800;
+		position: static;
+		background: none;
+		width: 66.7%;
+	}
     .page_content .item .item_description {
         position: absolute;
         bottom: 40px;
