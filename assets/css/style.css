@@ -1,5 +1,5 @@
 /* font */
-/*
+
 @font-face {
   font-family: 'UTM Avo';
   src:  url('../font/UTMAvo.eot?#iefix') format('embedded-opentype'),  
@@ -7,13 +7,13 @@
   font-weight: normal;
   font-style: normal;
 }
-*/
+/* 
 @font-face {
     font-family: 'UTM Avo';
     src: url('../font/UTMAvo/UTMAvo.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
-}
+} */
 
 
 @font-face {
@@ -1219,6 +1219,95 @@ footer .item .item_content {
     text-align: initial;
 }
 
+/************** BLOG ***********/
+#main-blog{
+    position: relative;
+}
+#post-featured{
+    display: inline-block;
+    clear: both;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.post-meta {
+    clear: both;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 0.3em;
+    display:inline-block;
+}
+.post-meta p{padding:0px;margin:0px}
+.post-meta .post-category {
+    float: left;
+    margin-right: 5px;
+}
+.post-meta .post-date {
+    float: left;
+}
+.post-list .post-item .post-inner{
+    margin-bottom:15px;
+}
+.post-item .post-inner .post-thumbnail img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.post-item .post-inner h2.post-title{
+    margin-top:0px;
+    color: #444;
+    margin-bottom: 10px;
+    font: 500 18px 'UTM Avo',sans-serif;
+    font-weight: 400;
+    line-height: 1.5em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+.post-item .post-inner h2.post-title a{
+    text-decoration:none;
+}
+.post-item .post-inner .post-thumbnail {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1em;
+}
+.single-blog header.entry-header {
+    border-bottom: 0;
+}
+header.entry-header h1.entry-title,
+header.page-header h1.entry-title,
+header.entry-header h1.page-title
+{
+    font-family: 'UTM Avo',sans-serif;
+    display: block;
+    padding: 10px 0 10px 0;
+    color: #3792ea;
+    font-weight:600;
+    font-size: 24px;
+    position: relative;
+    margin: 0;
+}
+.single-blog .entry-meta p.post-meta {
+    color: #898989;
+    font-size: 12px;
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 0;
+    border: 1px dotted #e0e0e0;
+    border-left: 0;
+    border-right: 0;
+}
+.single-blog .entry-meta p.post-meta span {
+    margin-right: 10px;
+}
+.single-blog .entry-meta p.post-meta span a{
+    text-decoration:none;
+}
+.single-blog .entry-content{
+    padding-top:10px;
+}
+
 .modal .nav-tabs > li.active > a, .modal .nav-tabs > li.active > a:focus, .modal .nav-tabs > li.active > a:hover,
 .page_content .nav-tabs > li.active > a, .page_content .nav-tabs > li.active > a:focus, .page_content .nav-tabs > li.active > a:hover {
     background: #ffb300;
@@ -1762,34 +1851,45 @@ a.btn_forget_password {
 }
 
 /* page thongtindulich */
-.danhmuc {
-    margin-bottom: 20px;
+.sidebar-box {margin-bottom:25px;}
+
+.category h4,
+.relate_news h4{
+    font-size: 18px;
+    border: 3px;
+    border-bottom: 3px solid #ffb300;
+    margin-top: -4px;
+    width: 100%;
+    padding-bottom: 10px;
+    line-height: 20px;
 }
 
-.danhmuc ul {
+.category ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.danhmuc ul > li {
+.category ul > li {
     border-bottom: 1px solid #e5e5e5;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.danhmuc ul > li > a {
+.category ul > li > a {
     font-size: 14px;
     color: #000;
 }
 
-.danhmuc ul > li.active > a, .danhmuc ul > li:hover > a, .danhmuc ul > li:focus > a {
+.category ul > li.active > a, .category ul > li:hover > a, .category ul > li:focus > a {
     font-weight: 800;
 }
 
 .relate_news .item {
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     overflow: hidden;
+    border-bottom: 1px dotted #ccc;
+    padding-bottom: 10px;
 }
 
 .relate_news .item:before {
@@ -1811,12 +1911,14 @@ a.btn_forget_password {
     width: 66.7%;
     padding-left: 10px;
     text-align: left;
+    margin:0px;
 }
 
 .relate_news .item .item_title a {
     font-size: 12px;
     color: #000;
     text-align: left;
+    text-decoration:none;
 }
 
 .relate_news h5.title {
@@ -2373,7 +2475,7 @@ hr.grey_line {
         background: rgba(0, 0, 0, 0.3);
     }
 
-	 .page_content .sidebar .item .item_title {
+	 .page_content #sidebar .item .item_title {
 		height: 55px;
 		overflow: hidden;
 		font-size: 18px;
