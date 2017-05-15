@@ -442,6 +442,7 @@ i.icon.icon_currency {
     color: #152ac3;
     font-weight: 600;
     border: none;
+	text-transform: capitalize;
 }
 
 .search .nav-tabs > li.active > a, .search .nav-tabs > li.active > a:focus, .search .nav-tabs > li.active > a:hover {
@@ -589,8 +590,9 @@ i.icon.icon_currency {
 .tour_feature .item .item_content .content_title {
     font-size: 16px;
     text-transform: uppercase;
-    padding-top: 10px;
+    padding-top: 15px;
     font-weight: 600;
+	line-height: 20px
 }
 
 .tour_feature .item .item_content .content_description {
@@ -775,7 +777,9 @@ i.icon.icon_currency {
     margin-bottom: 20px;
     position: relative;
 }
-
+.tour_1 .item .item_content .content_description p:first-child{
+	height: 40px;
+}
 .tour_1 .item .item_content .content_description i.icon.icon_love {
     position: absolute;
     bottom: 10px;
@@ -2018,7 +2022,8 @@ a.btn_forget_password {
 }
 
 .table_vemaybay .table_hangbay p span {
-    color: #f34401;
+    color: #000 !important;
+    font-style: italic;
 }
 
 .table_vemaybay .table_hangbay span.name {
@@ -2061,8 +2066,8 @@ a.btn_forget_password {
 }
 
 .quocte .rwd-table td:last-child {
-    display: block;
-    width: 100%;
+    display: table-cell;
+   // width: 100%;
     text-align: right;
 }
 
@@ -2386,6 +2391,16 @@ hr.grey_line {
 }
 
 @media screen and (max-width: 600px) {
+	.quocte .rwd-table td:last-child{
+		display: block;
+		width: 100%;
+	}
+	
+	
+	.tour_feature .item i.icon.icon_love{
+	    top: 40%;
+		left: 40%;
+	}
     .text-center-mobile {
         text-align: center;
         padding-left: 10px;
@@ -2400,6 +2415,7 @@ hr.grey_line {
         font-size: 14px;
         padding-top: 5px;
         margin-bottom: 0;
+		line-height: 16px;
     }
 
     .tour_feature .item .item_content .content_description p {
@@ -2429,7 +2445,19 @@ hr.grey_line {
     .slick-prev, .slick-next {
         display: none !important;
     }
-
+	.booking .slick-prev,.booking .slick-next{
+		display: inline-block !important;
+	}
+	.slick-prev{
+		left: -15px;
+	}
+	.slick-next{
+		right: -15px;
+	}
+	.slick-prev:before,.slick-next:before{
+		font-size: 20px !important;
+		color: #fff;	
+	}
     .pre-header .phone_number {
         font-size: 12px;
         white-space: nowrap;
@@ -2488,11 +2516,17 @@ hr.grey_line {
 	}
     .page_content .item .item_description {
         position: absolute;
-        bottom: 40px;
+        bottom: 0;
         background: rgba(0, 0, 0, 0.3);
         color: #fff;
     }
-
+	.page_content .item .item_short_description{
+		height: 60px;
+	}
+	.page_content .item .item_description p:nth-child(2){
+		padding-top: 0px;
+		padding-bottom: 5px;
+	}
     .page_content .item .item_link {
         position: absolute;
         bottom: 0;
@@ -2509,6 +2543,12 @@ hr.grey_line {
 }
 
 @media screen and (max-width: 480px) {
+	.table_vemaybay img{
+		max-width: 200px;
+	}
+	.rwd-table td:first-child{
+		text-align: center;
+	}
     .page_title {
         min-height: 200px;
     }
@@ -2525,6 +2565,7 @@ hr.grey_line {
         font-size: 12px;
         padding-top: 2px;
         margin-bottom: 0;
+		line-height: 14px;
     }
 
     .tour_feature .item .item_content .content_description {
@@ -2556,7 +2597,7 @@ hr.grey_line {
     }
 
     .tour_feature .item .item_content .content_button {
-        bottom: 2px;
+        bottom: 5px;
     }
 
     .item_content .btn.btn-blue {
@@ -2579,6 +2620,7 @@ hr.grey_line {
     .search .nav-tabs > li > a {
         font-size: 14px;
         padding: 10px;
+		
     }
 
     .tour_2 .item.big .img_title .img_title_1 {

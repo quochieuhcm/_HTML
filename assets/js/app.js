@@ -17,8 +17,8 @@ $(document).ready(function () {
         {
             from: 0,
             to: 100000000,
-            heterogeneity: ['50/50000'],
-            step: 1000,
+            heterogeneity: ['0/1000000'],
+            step: 1000000,
             round: 1,
             dimension: '&nbsp;',
             skin: 'round'
@@ -75,8 +75,8 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 1024,
