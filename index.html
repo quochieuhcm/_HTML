@@ -38,7 +38,7 @@
             src="assets/plugin/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
     <script type="text/javascript"
             src="assets/plugin/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
+	<script type="text/javascript" src="assets/plugin/bootstrap-responsive-tabs-master/js/responsive-tabs.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -162,6 +162,7 @@
 <script>
     $(document).ready(function () {
         $('[data-target="#quangcao"]').trigger('click');
+		fakewaffle.responsiveTabs(['xs', 'sm']);
     });
 </script>
 <style>
@@ -482,9 +483,8 @@
             <li><a data-toggle="tab" href="#menu1">Vé Máy Bay </a></li>
             <li><a data-toggle="tab" href="#menu2">Du Lịch Tự Túc </a></li>
         </ul>
-        <div class="clearfix"></div>
         <div class="tab-content responsive ">
-            <div id="home" class="tab-pane fade in active">
+            <div id="home" class="tab-pane in active">
                 <form class="row">
                     <div class=" col-md-2">
                         <label>Tour</label>
@@ -533,14 +533,13 @@
                     </div>
                 </form>
             </div>
-            <div id="menu1" class="tab-pane fade vemaybay">
+            <div id="menu1" class="tab-pane vemaybay">
                 <ul class="nav nav-tabs responsive">
                     <li class="active"><a data-toggle="tab" href="#ve_noidia">Nội địa</a></li>
                     <li><a data-toggle="tab" href="#ve_quocte">Quốc tế</a></li>
                 </ul>
-                <div class="clearfix"></div>
                 <div class="tab-content responsive ">
-                    <div id="ve_noidia" class="tab-pane fade in active">
+                    <div id="ve_noidia" class="tab-pane in active">
                         <form class="row">
                             <div class=" col-md-2">
                                 <label>Từ</label>
@@ -586,7 +585,7 @@
                             </div>
                         </form>
                     </div>
-                    <div id="ve_quocte" class="tab-pane fade">
+                    <div id="ve_quocte" class="tab-pane">
                         <form class="row">
                             <div class=" col-md-2">
                                 <label>Khởi hành từ</label>
@@ -646,7 +645,7 @@
                     </div>
                 </div>
             </div>
-            <div id="menu2" class="tab-pane fade">
+            <div id="menu2" class="tab-pane">
                 <form class="row">
                     <div class=" col-md-3">
                         <label>Sản phẩm</label>
