@@ -2415,7 +2415,10 @@ hr.grey_line {
 
 	    background: #dcdcdc;
 	}
-	
+	#tour_detail_schedule table tr,#tour_detail_schedule table tr th,#tour_detail_schedule table tr td{
+		display:block;
+		width: 100%;
+	}
 	
 	
 	.styled-select.slate select{
