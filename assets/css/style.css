@@ -2391,6 +2391,40 @@ hr.grey_line {
 }
 
 @media screen and (max-width: 600px) {
+	.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
+		font-size: 18px;
+		color: #152ac3;
+		font-weight: 600;
+		border: none;
+		text-transform: capitalize;
+	}
+	.panel-default:first-child >.panel-heading , .panel-default:first-child >.panel-collapse{
+		background: #f9f9f9;
+	}
+	.panel-default:nth-child(2)>.panel-heading,.panel-default:nth-child(2)>.panel-collapse{
+		    background: #e8e8e8;
+	}
+	.panel-default:nth-child(3)>.panel-heading,.panel-default:nth-child(3)>.panel-collapse{
+		    background: #d5d5d5;
+	}
+	
+	.panel-default:nth-child(2)>.panel-collapse .panel-default:first-child .panel-heading,.panel-default:nth-child(2)>.panel-collapse .panel-default:first-child .panel-collapse{
+		background: #f9f9f9;
+	}
+	.panel-default:nth-child(2)>.panel-collapse .panel-default:nth-child(2) .panel-heading,.panel-default:nth-child(2)>.panel-collapse .panel-default:nth-child(2) .panel-collapse{
+
+	    background: #dcdcdc;
+	}
+	
+	
+	
+	.styled-select.slate select{
+		border: 1px solid #ccc;
+		width: calc(100% + 15px);
+	}
+	.styled-select.slate{
+		width: 100%
+	}
 	.quocte .rwd-table td:last-child{
 		display: block;
 		width: 100%;
