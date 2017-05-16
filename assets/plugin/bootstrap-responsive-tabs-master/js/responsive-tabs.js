@@ -172,10 +172,9 @@ var fakewaffle = ( function ( $, fakewaffle ) {
 
 		// Toggle the tab when the associated panel is toggled
 		collapse.on( 'shown.bs.collapse', function ( e ) {
-
 			if (fakewaffle.currentPosition === 'panel') {
 				// Activate current tabs
-				var current = $( e.target ).context.id.replace( /collapse-/g, '#' );
+				var current = $( e.target ).attr('id').replace( /collapse-/g, '#' );
 				$( 'a[href="' + current + '"]' ).tab( 'show' );
 
 				// Update the content with active
