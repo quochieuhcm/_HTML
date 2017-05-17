@@ -969,7 +969,7 @@ i.icon.icon_currency {
 
 .news .item .news_title {
     font-size: 16px;
-    color: #363792;
+    color: #152ac3;
 }
 
 .news .item .news_description {
@@ -2122,13 +2122,16 @@ a.btn_forget_password {
     font-weight: 400;
 }
 
+.profile .infomation a {
+    font-weight: 600;
+}
 .tour_dadat {
     margin-top: 20px;
 }
 
 .tour_dadat .data {
     clear: both;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     padding: 0px 30px;
     margin-bottom: 20px;
 }
@@ -2137,12 +2140,12 @@ a.btn_forget_password {
     margin: 15px 0;
 }
 
-.tour_dadat .tour {
+.tour_dadat .tour.row {
     padding: 15px;
-    border-bottom: 1px #ccc dashed;
+    border-bottom: 1px #ccc dotted;
 }
 
-.tour_dadat .tour:last-child {
+.tour_dadat .tour.row:nth-last-child(2) {
     border-bottom: none;
 }
 
@@ -2182,7 +2185,7 @@ a.btn_forget_password {
 .thongtincanhan.page_content .news {
     margin-top: 20px;
     padding: 15px 30px;
-    border: 1px solid #ccc;
+    //border: 1px solid #ccc;
     clear: both;
 }
 
