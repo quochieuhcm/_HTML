@@ -2131,9 +2131,11 @@ a.btn_forget_password {
 
 .tour_dadat .data {
     clear: both;
-    //border: 1px solid #ccc;
     padding: 0px 30px;
     margin-bottom: 20px;
+    padding-bottom: 30px;
+    /* margin-bottom: 53px; */
+    border: 1px solid #ccc;
 }
 
 .tour_dadat .data h3 {
@@ -2185,7 +2187,7 @@ a.btn_forget_password {
 .thongtincanhan.page_content .news {
     margin-top: 20px;
     padding: 15px 30px;
-    //border: 1px solid #ccc;
+    border: 1px solid #ccc;
     clear: both;
 }
 
@@ -2194,10 +2196,17 @@ a.btn_forget_password {
 }
 
 
-
+.thongtincanhan.page_content .tour_yeuthich{
+	border: 1px solid #ccc;
+	padding: 15px 10px;
+	margin-bottom: 20px;
+}
+.thongtincanhan.page_content .tour_yeuthich p{
+	margin-bottom: 0;
+}
 .tour_yeuthich .tour {
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -2213,7 +2222,10 @@ a.btn_forget_password {
 .sp_da_mua .sanpham {
     text-align: center;
 }
-
+.thongtincanhan.page_content .sp_da_mua{
+	border: 1px solid #ccc;
+	padding: 15px 10px;
+}
 hr.grey_line {
     border-top: 1px solid #ccc;
     width: 100%;
