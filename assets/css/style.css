@@ -125,6 +125,14 @@ img {
     color: rgb(117, 117, 117);
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
 .btn {
     color: #fff;
     text-transform: uppercase;
@@ -174,9 +182,11 @@ img {
     border: 1px solid #3b5998;
     color: #757575;
 }
-.color.orange{
+
+.color.orange {
     color: #f14601;
 }
+
 h3.headline {
     color: #402210;
     line-height: 60px;
@@ -1745,6 +1755,10 @@ a.btn_forget_password {
 }
 
 @media screen and (max-width: 768px) {
+    .thongtindattour label {
+        min-width: 90px;
+    }
+
     .process-bar li a {
         padding: 10px 0 10px 20px;
         font-size: 15px;
@@ -2440,7 +2454,7 @@ hr.grey_line {
 /* dat tour*/
 .thongtindattour label {
     font-weight: 400;
-    min-width: 100px;
+    min-width: 150px;
 }
 
 .thongtindattour h3 {
@@ -2451,10 +2465,13 @@ hr.grey_line {
     text-align: left;
     min-width: 300px;
     font-size: 20px;
+    margin-bottom: 0;
 }
 
 .thongtindattour .thongtin {
-    padding-left: 15px
+    padding: 15px;
+    border: 1px solid #999999;
+    overflow: hidden;
 }
 
 .thongtindattour .thongtin p.title {
@@ -2476,9 +2493,21 @@ hr.grey_line {
     margin-left: -15px;
     margin-right: -15px;
 }
-
+.thongtindattour  h2{
+    color: #000;
+    font-size: 30px;
+}
 .thongtindattour .danhsach table > thead {
     background: #f0f0f0;
+}
+
+.thongtindattour .danhsach .table > tbody > tr > td,
+.thongtindattour .danhsach .table > tbody > tr > th,
+.thongtindattour .danhsach .table > tfoot > tr > td,
+.thongtindattour .danhsach .table > tfoot > tr > th,
+.thongtindattour .danhsach .table > thead > tr > td,
+.thongtindattour .danhsach .table > thead > tr > th {
+    border-top: none;
 }
 
 .thongtindattour .danhsach input, .thongtindattour .danhsach select {
@@ -2491,11 +2520,13 @@ hr.grey_line {
     text-transform: uppercase;
     font-weight: 700;
 }
-.thongtindattour .thongtin .giơithieucongthanhtoan .chitiet{
+
+.thongtindattour .thongtin .giơithieucongthanhtoan .chitiet {
     height: 100px;
     overflow: auto;
 }
-.thongtindattour .submit-tour{
+
+.thongtindattour .submit-tour {
     margin-top: 15px;
 }
 
