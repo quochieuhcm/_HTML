@@ -780,6 +780,7 @@ i.icon.icon_currency {
     font-weight: 600;
     min-height: 20px;
     line-height: 18px;
+	height: 30px
 }
 
 .tour_1 .item .item_content .content_description {
@@ -2390,7 +2391,7 @@ hr.grey_line {
 }
 
 .ve_noibat .header p span {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 }
 

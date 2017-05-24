@@ -17,7 +17,6 @@ $(document).ready(function () {
         {
             from: 0,
             to: 100000000,
-            heterogeneity: ['0/1000000'],
             step: 1000000,
             round: 1,
             dimension: '&nbsp;',
