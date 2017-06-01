@@ -70,13 +70,25 @@ AmCharts.maps.japanLow = {
                     "d": "m 338.48354,674.00369 c 2.21548,-6.70318 9.27841,-2.32124 5.86515,2.10538 -0.66644,0.86431 -0.81469,2.28852 -1.20311,3.30859 -1.53708,4.03711 0.44209,5.12934 1.57908,4.81237 2.97127,-0.82833 3.2741,1.94586 1.6543,4.51161 -1.40573,2.22656 -4.34666,4.35487 -6.01558,6.39155 -1.18059,1.44082 -3.41781,3.8769 -3.75968,-0.67682 -0.0652,-0.8653 0.18581,-2.29791 0.30075,-3.15807 0.3307,-2.47354 -0.61732,-3.41316 -1.27823,-3.60935 -1.57246,-0.46679 -3.05291,-2.82647 -0.97757,-5.038 1.13482,-1.20925 2.20728,-0.81213 2.18069,-3.75968 -0.0138,-1.58412 1.15706,-3.38341 1.6542,-4.88758 z"
                 },
                 {
-                    "id" : "path3585-8",
+                    "id": "path3585-8",
                     "title": "",
                     "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
-                    "d" : "m 215.46618,878.23057 c -0.15556,-2.3752 0.6193,-3.28745 1.27833,-4.58683 0.70549,-1.3911 1.7477,-1.86244 2.1806,-2.33102 0.55782,-0.60378 1.50673,-1.61259 1.87984,-2.48144 0.37853,-0.88132 2.0438,-1.34347 2.40623,-2.33102 0.34829,-0.94912 1.67851,-1.34189 2.7822,-0.97748 1.67555,0.55328 2.37036,2.06169 1.87984,3.60935 -0.21991,0.69342 -0.36796,1.94279 -0.60161,2.63177 -0.34414,1.01494 -0.83278,1.86264 -1.57908,2.63178 -1.83616,1.89239 -1.60083,3.58553 -1.57909,3.9101 0.39603,5.90736 -4.78835,6.26732 -6.91784,3.83489 -0.80729,-0.92213 -1.53145,-0.88754 -1.72942,-3.9101 z"
+                    "d": "m 215.46618,878.23057 c -0.15556,-2.3752 0.6193,-3.28745 1.27833,-4.58683 0.70549,-1.3911 1.7477,-1.86244 2.1806,-2.33102 0.55782,-0.60378 1.50673,-1.61259 1.87984,-2.48144 0.37853,-0.88132 2.0438,-1.34347 2.40623,-2.33102 0.34829,-0.94912 1.67851,-1.34189 2.7822,-0.97748 1.67555,0.55328 2.37036,2.06169 1.87984,3.60935 -0.21991,0.69342 -0.36796,1.94279 -0.60161,2.63177 -0.34414,1.01494 -0.83278,1.86264 -1.57908,2.63178 -1.83616,1.89239 -1.60083,3.58553 -1.57909,3.9101 0.39603,5.90736 -4.78835,6.26732 -6.91784,3.83489 -0.80729,-0.92213 -1.53145,-0.88754 -1.72942,-3.9101 z"
+                },
+                {
+                    "id": "path3242-8",
+                    "title": "okinawa",
+                    "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    "d" : "m 520.45471,958.58268 c 2.49083,-9.3141 11.2478,-3.49905 5.5643,3.00784 -1.79247,2.05211 -2.91335,4.50034 -4.96279,5.71473 -1.95901,1.16081 -4.15759,3.21075 -3.75968,4.28607 0.53608,1.44882 -0.0939,2.23465 -0.75194,2.7821 -3.05478,2.54114 -1.62217,3.89162 -0.22564,4.81247 2.91277,1.92056 2.1631,3.41978 -1.27823,4.66204 -4.3682,1.57681 -3.65175,3.87357 -2.40623,4.96277 6.2006,5.4228 -6.76821,13.4934 -6.91785,0.9024 -0.0227,-1.9655 3.49016,-1.9932 0.90237,-6.46678 -1.35374,-2.34011 -1.6121,-3.70245 1.72941,-6.01549 4.03444,-2.79257 3.93995,-6.89659 3.38371,-7.51935 -1.74819,-1.95752 -4.94688,-2.8334 1.05279,-3.45892 3.86187,-0.40275 5.85102,-0.86906 7.66978,-7.66988 z"
+                },
+                {
+                    "id": "path5492",
+                    "title": "",
+                    "info": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>" + "<p><img src='assets/img/khamphanhatban/info1.png'></p>" + "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s...</p>",
+                    "d" : "m 550,913.89609 c -65.502,0 -118.60181,53.0998 -118.60181,118.60181 l 2.53264,0 c 0,-64.10824 51.96094,-116.06917 116.06917,-116.06917 l 0,-2.53264 z"
                 }
-
             ]
         }
     }
-};
+}
+;
