@@ -2620,6 +2620,12 @@ hr.grey_line {
 }
 
 @media screen and (max-width: 600px) {
+	.partner img{
+		height: auto;
+		max-height: 80px;
+		width: auto;
+		margin: auto;
+	}
     .panel-title > .small, .panel-title > .small > a, .panel-title > a, .panel-title > small, .panel-title > small > a {
         font-size: 18px;
         color: #152ac3;
@@ -2856,6 +2862,7 @@ hr.grey_line {
     }
 
     .tour_feature .item .item_content .content_description p {
+		white-space: nowrap;
         margin-bottom: 0;
     }
 
@@ -2955,4 +2962,13 @@ hr.grey_line {
     .tour_1 .item .item_img > img, .tour_1 .item .item_img {
         min-height: 270px;
     }
+	.tour_feature .item .item_content .content_title{
+		font-size: 12px;
+	}
+	.tour_feature .item .item_content .content_price{
+		font-size: 10px;
+	}
+	.tour_feature .item .item_content .content_price .price_new{
+		font-size: 14px;
+	}
 }
