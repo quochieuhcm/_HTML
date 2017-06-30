@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="assets/plugin/egorkhmelev-jslider-696822f/css/jslider.round.plastic.css"
           type="text/css">
 
+    <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+    <link rel="stylesheet" type="text/css" href="assets/plugin/rs-plugin/css/settings.css" media="screen"/>
+
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
@@ -33,7 +36,11 @@
 
     <!-- bxSlider Javascript file -->
     <script src="assets/plugin/jquery.bxslider/jquery.bxslider.min.js"></script>
-
+    <script type="text/javascript"
+            src="assets/plugin/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript"
+            src="assets/plugin/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/plugin/bootstrap-responsive-tabs-master/js/responsive-tabs.js"></script>
 
     <!-- bin/jquery.slider.min.js -->
     <script type="text/javascript" src="assets/plugin/egorkhmelev-jslider-696822f/js/jshashtable-2.1_src.js"></script>
@@ -303,11 +310,40 @@
         }
     }
 </style>
-<section class="page_title ">
-    <div class="container">
-        <h1 class="text-center"><span>Khám phá</span> Nhật bản</h1>
+<section class="slider ">
+    <div class="tp-banner-container">
+        <div class="tp-banner">
+            <ul>
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1500">
+                    <!-- MAIN IMAGE -->
+                    <img src="assets/images/1.png" alt="slidebg1" data-bgfit="cover"
+                         data-bgposition="left top"
+                         data-bgrepeat="no-repeat">
+                    <!-- LAYERS -->
+                </li>
+
+            </ul>
+
+            <div class="tp-bannertimer"></div>
+        </div>
     </div>
+    <script type="text/javascript">
+        var revapi;
+        jQuery(document).ready(function () {
+            revapi = jQuery('.tp-banner').revolution(
+                {
+                    delay: 9000,
+                    startwidth: 1200,
+                    startheight: 600,
+                    hideThumbs: 10,
+                    fullWidth: "on",
+                    forceFullWidth: "on",
+                    hideThumbs: "500"
+                });
+        });	//ready
+    </script>
 </section>
+
 <section>
     <div class="container">
         <ul class="breadcrumb">
